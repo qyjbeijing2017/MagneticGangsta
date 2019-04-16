@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - UICanvas
+  - RebornPoint
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - PostProcessing
+  - Player
+  - Sence
+  - MagneticField
+  - Edge
+  - Item
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BGsky
+    uniqueID: 1475490857
+    locked: 0
+  - name: BGcraft
+    uniqueID: 147098885
+    locked: 0
+  - name: BGstar
+    uniqueID: 3835914789
+    locked: 0
+  - name: BGwholebg
+    uniqueID: 518512605
+    locked: 0
+  - name: BGwindow
+    uniqueID: 411253999
+    locked: 0
+  - name: front
+    uniqueID: 343738063
+    locked: 0
+  - name: front1
+    uniqueID: 3907421121
+    locked: 0
+  - name: floatanim
+    uniqueID: 1520213809
+    locked: 0
+  - name: plateform
+    uniqueID: 635538297
+    locked: 0
+  - name: player
+    uniqueID: 832277143
+    locked: 0

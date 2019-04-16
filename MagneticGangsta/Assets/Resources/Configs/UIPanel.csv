@@ -1,0 +1,5 @@
+﻿NameId,Path
+string,string
+ExamplePanel,UI/ExamplePanel/ExamplePanel
+LoadingPanel,UI/LoadingPanel/LoadingPanel
+GUIPanel,UI/LevelGUI/GUI
