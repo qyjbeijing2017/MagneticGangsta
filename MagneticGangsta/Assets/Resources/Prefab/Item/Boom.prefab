@@ -391,6 +391,8 @@ MonoBehaviour:
   Player: {fileID: 0}
   m_animator: {fileID: 6884634567573283195}
   m_collider: {fileID: 6884634567573283199}
+  m_shakeTime: 0.5
+  m_shakeVec: {x: 1, y: 1, z: 0}
 --- !u!114 &6884634567573283192
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using DG.Tweening;
 
 public class ItemBoom : PlayerFunctionBase
 {
@@ -12,6 +13,10 @@ public class ItemBoom : PlayerFunctionBase
     [SerializeField] private Collider2D m_collider;
     private SpriteRenderer m_spriteRenderer;
     private TrailRenderer m_trailRenderer;
+
+    [Space(20)]
+    [SerializeField] float m_shakeTime = 0.5f;
+    [SerializeField] Vector3 m_shakeVec = new Vector3(1, 1, 0);
 
     // Start is called before the first frame update
     public override void PlayerInit()
@@ -58,6 +63,11 @@ public class ItemBoom : PlayerFunctionBase
     public void BoomDestory()
     {
         Destroy(gameObject);
+    }
+
+    public void BoomShakeCamera()
+    {
+        Camera.main.DOShakePosition(m_shakeTime, m_shakeVec);
     }
 
 }

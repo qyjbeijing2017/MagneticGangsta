@@ -144,7 +144,7 @@ public class CameraFollow : MonoSingleton<CameraFollow>
             var enumerator = m_followItem.GetEnumerator();
             while (enumerator.MoveNext())
             {
-                followItem.Add(enumerator.Current.Value);                
+                followItem.Add(enumerator.Current.Value);
             }
             return followItem;
         }
@@ -155,7 +155,7 @@ public class CameraFollow : MonoSingleton<CameraFollow>
     {
         get
         {
-            if (FallowItem == null || FallowItem .Count == 0)
+            if (FallowItem == null || FallowItem.Count == 0)
             {
                 return Vector2.zero;
             }

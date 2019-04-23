@@ -36,7 +36,7 @@ namespace DaemonTools
 
         }
 
-        protected void Awake()
+        protected virtual void Awake()
         {
             m_instance = this as T;
             gameObject.name = typeof(T).Name;
