@@ -5,18 +5,20 @@ using DaemonTools;
 using UnityEngine.Events;
 public class LevelControl : MonoSingleton<LevelControl>
 {
-    private Dictionary<int, PlayerBase> m_players = null;
+    private Dictionary<Charactor, PlayerBase> m_players = null;
 
-    public Dictionary<int, PlayerBase> Players
+    public Dictionary<Charactor, PlayerBase> Players
     {
         get
         {
             if (m_players != null)
             {
+                
                 return m_players;
             }
             else
             {
+                Debug.Log("find");
                 return FindPlayers();
             }
         }
@@ -35,10 +37,11 @@ public class LevelControl : MonoSingleton<LevelControl>
         {
             playerReborn = FindObjectOfType<PlayerReborn>();
         }
+        FindPlayers();
 
-        LevelScoreBoard.Init();
         Daemon.Instance.Init();
         UIManager.Instance.Open("GUIPanel");
+        LevelTime.OnTimeOut += onGameEnd;
     }
 
     // Start is called before the first frame update
@@ -46,6 +49,7 @@ public class LevelControl : MonoSingleton<LevelControl>
     {
         LevelTime.OnTimeOut += OnLevelEnd;
         LevelTime.Start();
+        LevelScoreBoard.Init();
     }
 
     void OnLevelEnd()
@@ -60,16 +64,22 @@ public class LevelControl : MonoSingleton<LevelControl>
     }
 
 
-    public Dictionary<int, PlayerBase> FindPlayers()
+    public Dictionary<Charactor, PlayerBase> FindPlayers()
     {
 
-        m_players = new Dictionary<int, PlayerBase>();
+        m_players = new Dictionary<Charactor, PlayerBase>();
         PlayerBase[] players = FindObjectsOfType<PlayerBase>();
         for (int i = 0; i < players.Length; i++)
         {
             if (players[i].IsPlayer)
-                m_players.Add(players[i].ID, players[i]);
+                m_players.Add(players[i].charactor, players[i]);
         }
         return m_players;
+    }
+
+
+    void onGameEnd()
+    {
+        UIManager.Instance.Open("GameEndPanel");
     }
 }

@@ -30,6 +30,11 @@ public class MeteoriteShooter : MonoBehaviour
     {
         m_shootCD.OnTimeOut += OnTimeOut;
         m_shootCD.Start();
+        LevelControl.Instance.LevelTime.OnTimeOut += () =>
+        {
+            m_shootCD.OnTimeOut -= OnTimeOut;
+            m_shootCD.Stop();
+        };
     }
 
     void OnTimeOut()
@@ -40,7 +45,7 @@ public class MeteoriteShooter : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(targetOrigin, Vector2.down, 100.0f, m_rayMask);
         if (hit.collider != null)
         {
-            MeteoriteFall meteoriteFall = Instantiate(m_meteorite,creatPos,Quaternion.Euler(0,0,0));
+            MeteoriteFall meteoriteFall = Instantiate(m_meteorite, creatPos, Quaternion.Euler(0, 0, 0));
             meteoriteFall.TargetPoint = hit.point;
         }
         m_shootCD.Start();

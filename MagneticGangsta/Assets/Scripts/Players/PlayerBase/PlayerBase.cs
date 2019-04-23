@@ -8,6 +8,7 @@ public class PlayerBase : MonoBehaviour
 {
 
     public int ID;
+    public Charactor charactor;
 
     virtual public bool IsPlayer { get { return true; } }
 

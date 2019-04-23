@@ -41,8 +41,6 @@ public class LevelTimer : MonoBehaviour
     {
         m_progress.fillAmount = 1 - LevelTime.CD;
     }
-
-
     void TextShow()
     {
         float secondAll = LevelTime.CDTime * (1 - LevelTime.CD);

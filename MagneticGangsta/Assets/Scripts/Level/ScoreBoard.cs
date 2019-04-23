@@ -8,7 +8,7 @@ using UnityEngine.Events;
 /// </summary>
 public class ScoreBoard
 {
-    public Dictionary<int, int> Scores = new Dictionary<int, int>();
+    public Dictionary<Charactor, int> Scores = new Dictionary<Charactor, int>();
 
     public int KillPoint = 30;
 
@@ -20,6 +20,12 @@ public class ScoreBoard
         {
             LevelControl.Instance.playerReborn.OnDie += OnPlayerDie;
         }
+        var enumerator = LevelControl.Instance.Players.GetEnumerator();
+        while (enumerator.MoveNext())
+        {
+            Scores.Add(enumerator.Current.Key, 0);
+        }
+
     }
 
     void OnPlayerDie(PlayerBase player)
@@ -31,13 +37,16 @@ public class ScoreBoard
             if (hitAttacker.Attacker)
             {
                 PlayerBase attacker = hitAttacker.Attacker;
-                if (Scores.ContainsKey(attacker.ID))
+
+
+                if (Scores.ContainsKey(attacker.charactor))
                 {
-                    Scores[attacker.ID] += KillPoint;
+                    Scores[attacker.charactor] += KillPoint;
                 }
                 else
                 {
-                    Scores.Add(attacker.ID, KillPoint);
+                    if (attacker.IsPlayer)
+                        Scores.Add(attacker.charactor, KillPoint);
                 }
                 GetScores?.Invoke(attacker);
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class CDBase : System.Object
@@ -26,10 +27,12 @@ public class CDBase : System.Object
     public CDBase()
     {
         CDTime = 0.0f;
+        SceneManager.sceneUnloaded += OnSceneUnload; 
     }
     public CDBase(float time)
     {
         CDTime = time;
+        SceneManager.sceneUnloaded += OnSceneUnload;
     }
 
     public void Start()
@@ -61,5 +64,11 @@ public class CDBase : System.Object
         m_timer = CDTime;
         m_cd = 1.0f;
         Daemon.Instance.DaemonUpdate -= CDNow;
+    }
+
+
+    public void OnSceneUnload(Scene scene)
+    {
+        Stop();
     }
 }

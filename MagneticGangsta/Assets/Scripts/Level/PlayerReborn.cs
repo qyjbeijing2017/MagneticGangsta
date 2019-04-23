@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class PlayerReborn : MonoBehaviour
 {
 
-    public Dictionary<int, PlayerBase> Players = null;
+    public Dictionary<Charactor, PlayerBase> Players = null;
 
 
     public event UnityAction<PlayerBase> OnDie;

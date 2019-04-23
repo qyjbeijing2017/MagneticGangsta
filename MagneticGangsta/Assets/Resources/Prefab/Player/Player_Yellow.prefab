@@ -730,7 +730,8 @@ GameObject:
   - component: {fileID: 8660759291876140736}
   - component: {fileID: 7368125476835749558}
   - component: {fileID: 7607557362582368449}
-  - component: {fileID: 1211119000454768915}
+  - component: {fileID: 1209064413}
+  - component: {fileID: 1209064390}
   m_Layer: 9
   m_Name: Player_Yellow
   m_TagString: Player
@@ -792,7 +793,7 @@ SpriteRenderer:
   m_SortingLayerID: 832277143
   m_SortingLayer: 10
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 856fa0cf4c8f591478a3bc4093bccd68, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2582dec95f170c246b8216a08c0b9d5d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -870,7 +871,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 1536
   m_RotationalOffset: 0
   m_UseOneWay: 0
   m_UseOneWayGrouping: 0
@@ -891,6 +892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 2
+  SID: player_yellow
   IsMoving: 0
   IsOnGround: 0
   IsLockOption: 0
@@ -1115,6 +1117,7 @@ MonoBehaviour:
   VertigoTime: 3
   MaxAttackPower: 5
   AttackForceCoefficientAdd: 1.5
+  collider: {fileID: 1209064413}
 --- !u!114 &7368125476835749558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1145,7 +1148,23 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 4
---- !u!114 &1211119000454768915
+--- !u!70 &1209064413
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3639821991439264011}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.7, y: 1.4}
+  m_Direction: 0
+--- !u!114 &1209064390
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1154,9 +1173,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3639821991439264011}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f91f822d0932166499d8c86a9ab8c561, type: 3}
+  m_Script: {fileID: 11500000, guid: d259ae2b58eb0364f91d9178ab64f02a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 0}
 --- !u!1 &5266695195956389894
 GameObject:
   m_ObjectHideFlags: 0

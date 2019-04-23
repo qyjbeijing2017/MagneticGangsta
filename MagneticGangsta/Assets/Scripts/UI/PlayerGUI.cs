@@ -11,6 +11,7 @@ public class PlayerGUI : UIBase
     [SerializeField] Text m_yellow;
     [SerializeField] Text m_green;
 
+
     ScoreBoard scoreBoard;
 
 
@@ -36,21 +37,21 @@ public class PlayerGUI : UIBase
 
     private void ShowScore(PlayerBase player)
     {
-        if (scoreBoard.Scores.ContainsKey(1))
+        if (scoreBoard.Scores.ContainsKey(Charactor.Red))
         {
-            m_red.text = scoreBoard.Scores[1].ToString();
+            m_red.text = scoreBoard.Scores[Charactor.Red].ToString();
         }
-        if (scoreBoard.Scores.ContainsKey(2))
+        if (scoreBoard.Scores.ContainsKey(Charactor.Yellow))
         {
-            m_yellow.text = scoreBoard.Scores[2].ToString();
+            m_yellow.text = scoreBoard.Scores[Charactor.Yellow].ToString();
         }
-        if (scoreBoard.Scores.ContainsKey(3))
+        if (scoreBoard.Scores.ContainsKey(Charactor.Blue))
         {
-            m_blue.text = scoreBoard.Scores[3].ToString();
+            m_blue.text = scoreBoard.Scores[Charactor.Blue].ToString();
         }
-        if (scoreBoard.Scores.ContainsKey(4))
+        if (scoreBoard.Scores.ContainsKey(Charactor.Green))
         {
-            m_green.text = scoreBoard.Scores[4].ToString();
+            m_green.text = scoreBoard.Scores[Charactor.Green].ToString();
         }
     }
 }
