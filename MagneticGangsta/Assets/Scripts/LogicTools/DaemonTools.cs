@@ -20,12 +20,14 @@ namespace DaemonTools
                 if (null == m_instance)
                 {
                     T[] instances = FindObjectsOfType<T>();
-                    if (instances != null)
+                    if (instances.Length > 0)
                     {
-                        for (int i = 0; i < instances.Length; i++)
+                        m_instance = instances[0];
+                        for (int i = 1; i < instances.Length; i++)
                         {
                             Destroy(instances[i].gameObject);
                         }
+                        return m_instance;
                     }
                     GameObject go = new GameObject();
                     go.name = typeof(T).Name;
