@@ -16,7 +16,7 @@ public class CameraFollowItem : PlayerFunctionBase
 
     private void OnDestroy()
     {
-
-        CameraFollow.Instance.RemoveFollowItem(m_followItemIndex);
+        if (FindObjectOfType<CameraFollow>())
+            CameraFollow.Instance.RemoveFollowItem(m_followItemIndex);
     }
 }
