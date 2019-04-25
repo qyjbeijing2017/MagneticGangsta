@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  SID: player_blue
+  charactor: 3
   IsMoving: 0
   IsOnGround: 0
   IsLockOption: 0
@@ -286,7 +286,7 @@ MonoBehaviour:
   collider: {fileID: 0}
   AttackDamage:
     Attacker: {fileID: 0}
-    AttackForce: 300
+    AttackForce: 100
     AttackPolarity:
       Value: 0
     Buffes: []
@@ -334,9 +334,9 @@ MonoBehaviour:
   Player: {fileID: 0}
   MaxPower: 100
   m_powerNow: 100
-  RecoverySpeed: 20
+  RecoverySpeed: 30
   RecoveryCD:
-    CDTime: 3
+    CDTime: 2
 --- !u!114 &8392989219317036955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -413,10 +413,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
   VertigoEffectEnableTime:
-    CDTime: 1
+    CDTime: 1.5
   VertigoTime: 3
   MaxAttackPower: 5
-  AttackForceCoefficientAdd: 1.5
+  AttackForceCoefficientAdd: 3
   collider: {fileID: 1266760958}
 --- !u!58 &2685847089105497141
 CircleCollider2D:
@@ -433,7 +433,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 3
 --- !u!114 &1053955210
 MonoBehaviour:
   m_ObjectHideFlags: 0

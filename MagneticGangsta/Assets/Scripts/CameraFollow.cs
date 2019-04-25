@@ -306,7 +306,7 @@ public class CameraFollow : MonoSingleton<CameraFollow>
     // Update is called once per frame
    
     void Update()
-    {   return;
+    {   
         CameraScaleFollow();
         CameraScaleLimit();
         CameraPositionFollow();
