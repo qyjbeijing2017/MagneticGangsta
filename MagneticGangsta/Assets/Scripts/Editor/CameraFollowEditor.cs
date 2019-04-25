@@ -94,10 +94,10 @@ public class CameraFollowEditor : Editor
             DrawScreen(Camera.main.transform.position, m_cameraFollow.SizeMin);
 
 
-            m_cameraFollow.CameraScaleFollow();
-            m_cameraFollow.CameraScaleLimit();
-            m_cameraFollow.CameraPositionFollow();
-            m_cameraFollow.CameraPositionLimit();
+            //m_cameraFollow.CameraScaleFollow();
+            //m_cameraFollow.CameraScaleLimit();
+            //m_cameraFollow.CameraPositionFollow();
+            //m_cameraFollow.CameraPositionLimit();
 
         }
     }
