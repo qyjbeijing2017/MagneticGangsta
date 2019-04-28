@@ -5,26 +5,26 @@ using UnityEngine;
 [System.Serializable]
 public class PlayerBuffBase : System.Object
 {
-    public string Name = "buff";
+    virtual public string Name { get { return "Buff"; } }
 
-    [HideInInspector]public PlayerBuffManager BuffManager;
+    [HideInInspector] public PlayerBuffManager BuffManager;
 
-    public CDBase MaxTime = new CDBase(5.0f); 
+    public CDBase MaxTime = new CDBase(5.0f);
 
     public PlayerBuffBase() { }
-    public PlayerBuffBase(string name, float maxTime) { Name = name; MaxTime.CDTime = maxTime; }
+    public PlayerBuffBase(string name, float maxTime) { MaxTime.CDTime = maxTime; }
 
-    public void StartBefore(BuffAttributesData buffAttributes)
+    public virtual void StartBefore(BuffAttributesData buffAttributes)
     {
         BuffStart(buffAttributes);
         MaxTime.OnTimeOut += EndBefore;
         MaxTime.Start();
     }
 
-    private void EndBefore()
+    protected virtual void EndBefore()
     {
         BuffManager.RemoveBuff(Name);
-        
+
     }
 
     public virtual void BuffStart(BuffAttributesData buffAttributes) { }
@@ -38,10 +38,10 @@ public class PlayerBuffBase : System.Object
 
     public virtual PlayerBuffBase Copy()
     {
-        PlayerBuffBase copy = new PlayerBuffBase(Name,MaxTime.CDTime);
+        PlayerBuffBase copy = new PlayerBuffBase(Name, MaxTime.CDTime);
         copy.BuffManager = BuffManager;
         return copy;
-        
+
     }
 
     public virtual void OnTriggerEnter2D(Collider2D collision) { }

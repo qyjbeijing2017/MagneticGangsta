@@ -56,6 +56,7 @@ public class PlayerBase : MonoBehaviour
         var funcEnumerator = m_functionBases.GetEnumerator();
         while (funcEnumerator.MoveNext())
         {
+            if (!funcEnumerator.Current.Value.FunctionEnable) continue;
             funcEnumerator.Current.Value.PlayerLoop();
         }
 

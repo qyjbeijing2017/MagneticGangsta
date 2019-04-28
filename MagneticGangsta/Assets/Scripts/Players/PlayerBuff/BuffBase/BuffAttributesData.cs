@@ -21,6 +21,8 @@ public class BuffAttributesData
 
     public BuffAttributeBase<float> AttackForceCoefficient;
 
+    public BuffAttributeBase<bool> IsLockMove;
+
     #endregion
 
     #region 登记属性修改位置
@@ -34,6 +36,8 @@ public class BuffAttributesData
 
         if (m_player.FunctionBases.ContainsKey("BeHit"))
             AttackForceCoefficient = new BuffAttributeBase<float>((m_player.FunctionBases["BeHit"] as BeHitWithCoefficient).AttackForceCoefficient);
+
+        IsLockMove = new BuffAttributeBase<bool>(m_player.FunctionBases["Move"].FunctionEnable);
     }
 
     /// <summary>
@@ -45,6 +49,8 @@ public class BuffAttributesData
 
         if (m_player.FunctionBases.ContainsKey("BeHit"))
             (m_player.FunctionBases["BeHit"] as BeHitWithCoefficient).AttackForceCoefficient = AttackForceCoefficient.Attribute;
+
+        m_player.FunctionBases["Move"].FunctionEnable = IsLockMove.Attribute;
 
     }
     #endregion
