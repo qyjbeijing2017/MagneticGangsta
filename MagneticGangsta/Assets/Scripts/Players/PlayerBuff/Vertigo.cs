@@ -5,10 +5,10 @@ using UnityEngine;
 public class Vertigo : PlayerBuffBase
 {
     float m_attackForceCoefficientAdd = 0.0f;
+    public override string Name { get { return "Vertigo"; } }
 
     public Vertigo(float maxtime, float attackForceCoefficientAdd)
     {
-        Name = "Vertigo";
         MaxTime.CDTime = maxtime;
         m_attackForceCoefficientAdd = attackForceCoefficientAdd;
     }

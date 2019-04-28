@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Delay : PlayerBuffBase
 {
+    public override string Name { get { return "Delay"; } }
     // Start is called before the first frame update
     public Delay(float delayTime)
     {
         MaxTime.CDTime = delayTime;
-        Name = "Delay";
     }
 
     public override void BuffStart(BuffAttributesData buffAttributes)
