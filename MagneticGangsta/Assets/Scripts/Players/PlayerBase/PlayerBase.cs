@@ -135,5 +135,6 @@ public class PlayerBase : MonoBehaviour
         gameObject.SetActive(true);
         IsDead = false;
     }
+
 }
 
