@@ -959,8 +959,35 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 211724026111505449, guid: 358902c9e54228d479a02dd71450bc52, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 358902c9e54228d479a02dd71450bc52, type: 3}
+--- !u!1 &529342765 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3639821991439264011, guid: 358902c9e54228d479a02dd71450bc52,
+    type: 3}
+  m_PrefabInstance: {fileID: 529342764}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &529342766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529342765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32d95c3e08fe1e1439530ccad3426921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  FunctionEnable: 1
+  IsInvincible: 0
+  AttackForceCoefficient: 1
+  StrikeFlyValue: 0
+  StrikeFlyAddValue: 0.01
+  MinAttackCoefficient: 0.1
+  MaxAttackCoefficient: 20
 --- !u!1001 &563275313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1241,8 +1268,35 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7894975580140030453, guid: c6422a0f38ec7c744b558723afacb449, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c6422a0f38ec7c744b558723afacb449, type: 3}
+--- !u!1 &638890319 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1597397445722083930, guid: c6422a0f38ec7c744b558723afacb449,
+    type: 3}
+  m_PrefabInstance: {fileID: 638890318}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &638890320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638890319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32d95c3e08fe1e1439530ccad3426921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  FunctionEnable: 1
+  IsInvincible: 0
+  AttackForceCoefficient: 1
+  StrikeFlyValue: 0
+  StrikeFlyAddValue: 0.01
+  MinAttackCoefficient: 0.1
+  MaxAttackCoefficient: 20
 --- !u!1 &865924766
 GameObject:
   m_ObjectHideFlags: 0
@@ -1793,8 +1847,35 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9175495632563446537, guid: 966548d675839d349a0e10c4667b9ff9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 966548d675839d349a0e10c4667b9ff9, type: 3}
+--- !u!1 &1095722821 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3639821991439264011, guid: 966548d675839d349a0e10c4667b9ff9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1095722820}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1095722822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095722821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32d95c3e08fe1e1439530ccad3426921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  FunctionEnable: 1
+  IsInvincible: 0
+  AttackForceCoefficient: 1
+  StrikeFlyValue: 0
+  StrikeFlyAddValue: 0.01
+  MinAttackCoefficient: 0.1
+  MaxAttackCoefficient: 20
 --- !u!1 &1166349847
 GameObject:
   m_ObjectHideFlags: 0
@@ -2086,8 +2167,35 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4825315771961159542, guid: f2b3838996916474585dd8d2c1470fbb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f2b3838996916474585dd8d2c1470fbb, type: 3}
+--- !u!1 &1371145204 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6716117706817560014, guid: f2b3838996916474585dd8d2c1470fbb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1371145203}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1371145205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371145204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32d95c3e08fe1e1439530ccad3426921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  FunctionEnable: 1
+  IsInvincible: 0
+  AttackForceCoefficient: 1
+  StrikeFlyValue: 0
+  StrikeFlyAddValue: 0.01
+  MinAttackCoefficient: 0.1
+  MaxAttackCoefficient: 20
 --- !u!1 &1435169001
 GameObject:
   m_ObjectHideFlags: 0
