@@ -8,6 +8,10 @@ public class BeHitWithNonePolarity : BeHitWithCoefficient
 
     protected override void OnBeHit(DamageBase damage)
     {
+        if (IsInvincible)
+        {
+            return;
+        }
         base.OnBeHit(damage);
 
         if (damage.AttackPolarity == Polarity.None)

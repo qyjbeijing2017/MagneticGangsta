@@ -732,6 +732,7 @@ GameObject:
   - component: {fileID: 7607557362582368449}
   - component: {fileID: 1209064413}
   - component: {fileID: 1209064390}
+  - component: {fileID: 2224139593265948317}
   m_Layer: 9
   m_Name: Player_Yellow
   m_TagString: Player
@@ -927,8 +928,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   PlayerForce: 15
-  MaxMoveSpeed: 10
+  MaxMoveSpeed: 12
 --- !u!114 &8167002999829825265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -942,6 +944,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   JumpVelocity:
   - 12
   - 10
@@ -958,6 +961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   FootPosition: {x: 0, y: -0.7}
   FootLength: 0.1
   CheckGroundBeforeLength: 0.5
@@ -977,6 +981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   OptionButton: Attack
   AttackTime:
     CDTime: 0.1
@@ -1005,6 +1010,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
+  IsInvincible: 0
   AttackForceCoefficient: 1
 --- !u!114 &159329180152812619
 MonoBehaviour:
@@ -1019,6 +1026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
 --- !u!114 &3519629107842725500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1032,6 +1040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   MaxPower: 100
   m_powerNow: 100
   RecoverySpeed: 30
@@ -1050,6 +1059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   DefenceCost: 20
 --- !u!114 &2894565424208371079
 MonoBehaviour:
@@ -1064,6 +1074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   BeHitEffectTime:
     CDTime: 0.3
   HitAngle: 60
@@ -1081,6 +1092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   m_attacker: {fileID: 0}
   AttackerLoginTime:
     CDTime: 3
@@ -1097,6 +1109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   m_animator: {fileID: 260414183424103683}
   MagneticFieldGUI: {fileID: 3200187536649147375}
 --- !u!114 &8660759291876140736
@@ -1112,6 +1125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   VertigoEffectEnableTime:
     CDTime: 1.5
   VertigoTime: 3
@@ -1131,6 +1145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   DelayTime: 0.3
 --- !u!58 &7607557362582368449
 CircleCollider2D:
@@ -1177,6 +1192,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
+--- !u!114 &2224139593265948317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3639821991439264011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 417c5258ff3289b4c9a89c056a6358a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  FunctionEnable: 1
+  m_rebornEffect: {fileID: 7541289374466220846, guid: 6ad292d98d41c8f49a89aafdf9a2ce45,
+    type: 3}
 --- !u!1 &5266695195956389894
 GameObject:
   m_ObjectHideFlags: 0

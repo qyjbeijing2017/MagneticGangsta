@@ -7,6 +7,8 @@ public class BeHitBase : PlayerFunctionBase
 
     public override string Name { get { return "BeHit"; } }
 
+    public bool IsInvincible = false;
+
     public void OnBeHitBefore(DamageBase damage)
     {
         OnBeHit(damage);
@@ -19,6 +21,10 @@ public class BeHitBase : PlayerFunctionBase
 
     protected virtual void OnBeHit(DamageBase damage)
     {
+        if (IsInvincible)
+        {
+            return;
+        }
 
         if (Player.IsDefence)
         {

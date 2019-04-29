@@ -9,6 +9,10 @@ public class BeHitWithCoefficient : BeHitBase
 
     protected override void OnBeHit(DamageBase damage)
     {
+        if (IsInvincible)
+        {
+            return;
+        }
         if (Player.IsDefence)
         {
             return;
