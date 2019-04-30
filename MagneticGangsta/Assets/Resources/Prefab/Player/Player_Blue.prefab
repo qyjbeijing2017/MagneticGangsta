@@ -20,7 +20,6 @@ GameObject:
   - component: {fileID: 755083113521595878}
   - component: {fileID: 5718470692501123431}
   - component: {fileID: 6045637132172387231}
-  - component: {fileID: 7894975580140030453}
   - component: {fileID: 2129216095696740855}
   - component: {fileID: 2190959250627225289}
   - component: {fileID: 8392989219317036955}
@@ -32,6 +31,8 @@ GameObject:
   - component: {fileID: 1053955210}
   - component: {fileID: 1266760958}
   - component: {fileID: 1266760935}
+  - component: {fileID: 3082803096675381348}
+  - component: {fileID: 638890320}
   m_Layer: 9
   m_Name: Player_Blue
   m_TagString: Player
@@ -227,8 +228,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   PlayerForce: 15
-  MaxMoveSpeed: 10
+  MaxMoveSpeed: 12
 --- !u!114 &755083113521595878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,6 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   JumpVelocity:
   - 12
   - 10
@@ -258,6 +261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   FootPosition: {x: 0, y: -0.7}
   FootLength: 0.1
   CheckGroundBeforeLength: 0.5
@@ -277,6 +281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   OptionButton: Attack
   AttackTime:
     CDTime: 0.1
@@ -292,20 +297,6 @@ MonoBehaviour:
     Buffes: []
     AttackPosition: {x: 0, y: 0}
   AttackCost: 30
---- !u!114 &7894975580140030453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597397445722083930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3f0cb8fb03eb5f49993fbd722b6349d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  AttackForceCoefficient: 1
 --- !u!114 &2129216095696740855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,6 +310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
 --- !u!114 &2190959250627225289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -332,6 +324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   MaxPower: 100
   m_powerNow: 100
   RecoverySpeed: 30
@@ -350,6 +343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   DefenceCost: 20
 --- !u!114 &7165189966933561942
 MonoBehaviour:
@@ -364,6 +358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   m_attacker: {fileID: 0}
   AttackerLoginTime:
     CDTime: 3
@@ -380,6 +375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   BeHitEffectTime:
     CDTime: 0.3
   HitAngle: 60
@@ -397,6 +393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   m_animator: {fileID: 492869597770867692}
   MagneticFieldGUI: {fileID: 8799503622634832222}
 --- !u!114 &7848314334877792679
@@ -412,6 +409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   VertigoEffectEnableTime:
     CDTime: 1.5
   VertigoTime: 3
@@ -447,6 +445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   DelayTime: 0.3
 --- !u!70 &1266760958
 CapsuleCollider2D:
@@ -477,6 +476,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
+--- !u!114 &3082803096675381348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597397445722083930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 417c5258ff3289b4c9a89c056a6358a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  FunctionEnable: 1
+  m_rebornEffect: {fileID: 7541289374466220846, guid: 6ad292d98d41c8f49a89aafdf9a2ce45,
+    type: 3}
+--- !u!114 &638890320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597397445722083930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32d95c3e08fe1e1439530ccad3426921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  FunctionEnable: 1
+  IsInvincible: 0
+  AttackForceCoefficient: 1
+  StrikeFlyValue: 0
+  StrikeFlyAddValue: 0.01
+  MinAttackCoefficient: 0.1
+  MaxAttackCoefficient: 20
 --- !u!1 &4009819476684978506
 GameObject:
   m_ObjectHideFlags: 0

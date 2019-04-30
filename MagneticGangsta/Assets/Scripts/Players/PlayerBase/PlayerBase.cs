@@ -131,9 +131,10 @@ public class PlayerBase : MonoBehaviour
     public void ReBorn(Vector2 position)
     {
         transform.position = position;
-        IsLockOption = false;
-        gameObject.SetActive(true);
-        IsDead = false;
+        //IsLockOption = false;
+        //gameObject.SetActive(true);
+        //IsDead = false;
     }
+
 }
 

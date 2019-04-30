@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{c3d31be4-62cd-45fd-88bd-6cde8414f5a8}">
+		<property name="assetPath">
+			<value>Nexus Prime（游戏开始）.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>169.9265306122449</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a8917684-a6dd-44ee-a3b5-21bc550db684}</destination>
+		</relationship>
+	</object>
+</objects>
