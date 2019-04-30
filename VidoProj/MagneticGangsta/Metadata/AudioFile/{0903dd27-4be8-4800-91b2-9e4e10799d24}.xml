@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{0903dd27-4be8-4800-91b2-9e4e10799d24}">
+		<property name="assetPath">
+			<value>Perturbator - Miami Disco.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>271.09877551020406</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a8917684-a6dd-44ee-a3b5-21bc550db684}</destination>
+		</relationship>
+	</object>
+</objects>
