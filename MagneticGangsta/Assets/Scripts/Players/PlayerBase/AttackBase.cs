@@ -6,11 +6,12 @@ public class AttackBase : PlayerFunctionBase
 {
     public string OptionButton = "Attack";
     public CDBase AttackTime = new CDBase(0.1f);
-    public CDBase AttackCD = new CDBase(1.0f);
+    [HideInInspector] public CDBase AttackCD = new CDBase(1.0f);
     [Range(0, 1)] public float ReactionCoefficient = 0.5f;
     public Collider2D collider;
     public DamageBase AttackDamage = new DamageBase();
 
+    public override string Name { get { return "Attack"; } }
 
     public override void PlayerInit()
     {
@@ -41,14 +42,14 @@ public class AttackBase : PlayerFunctionBase
         AttackTime.Start();
     }
 
-    void AttackEnd()
+    virtual protected void AttackEnd()
     {
         collider.enabled = false;
         AttackCD.Start();
     }
 
 
-    private void OnTriggerStay2D(Collider2D collision)
+    protected virtual void OnTriggerStay2D(Collider2D collision)
     {
         if (collider.IsTouching(collision))
         {

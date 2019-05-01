@@ -42,13 +42,20 @@ public class AttackSimple : PlayerFunctionBase
         if (beHit)
         {          
             AttackDamage.AttackPosition = transform.position;
-            beHit.OnBeHitBefore(AttackDamage.Copy());
+
+            BeHitWihVOrF(beHit, AttackDamage.Copy());
+            
             if (Player.OnAttack != null)
             {
                 Player.OnAttack.Invoke(beHit.Player);
             }
         }
 
+    }
+
+    protected virtual void BeHitWihVOrF(BeHitBase beHit ,DamageBase damage)
+    {
+        beHit.OnBeHitBefore(damage);
     }
 
 }

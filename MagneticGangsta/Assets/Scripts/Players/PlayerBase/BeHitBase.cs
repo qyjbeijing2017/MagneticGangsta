@@ -36,18 +36,28 @@ public class BeHitBase : PlayerFunctionBase
 
             Vector2 myPoistion2Target = (damage.AttackPosition - new Vector2(Player.transform.position.x, Player.transform.position.y)).normalized;
 
-            if (damage.AttackPolarity != Player.PlayerPolarity)
-            {
-                PlayerRigidbody2D.AddForce(myPoistion2Target * damage.AttackForce);
-            }
-            else
-            {
-                PlayerRigidbody2D.AddForce(-myPoistion2Target * damage.AttackForce);
-            }
+            BeHitWihVOrF(damage, myPoistion2Target);
+
             if (Player.OnBeHit != null)
             {
                 Player.OnBeHit(damage);
             }
         }
     }
+
+
+
+    protected virtual void BeHitWihVOrF(DamageBase damage, Vector2 myPoistion2Target)
+    {
+
+        if (damage.AttackPolarity != Player.PlayerPolarity)
+        {
+            PlayerRigidbody2D.AddForce(myPoistion2Target * damage.AttackForce);
+        }
+        else
+        {
+            PlayerRigidbody2D.AddForce(-myPoistion2Target * damage.AttackForce);
+        }
+    }
+
 }

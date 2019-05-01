@@ -10,9 +10,9 @@ public class DamageBase : System.Object
     public Polarity AttackPolarity = Polarity.None;
     public List<PlayerBuffBase> Buffes = new List<PlayerBuffBase>();
     [HideInInspector] public Vector2 AttackPosition = Vector2.zero;
+    public float AttackSpeed;
 
-
-    public DamageBase Copy()
+    public virtual DamageBase Copy()
     {
         DamageBase copy = new DamageBase();
         copy.AttackForce = AttackForce;
@@ -20,6 +20,8 @@ public class DamageBase : System.Object
         for (int i = 0; i < Buffes.Count; i++) copy.Buffes.Add(Buffes[i].Copy());
         copy.AttackPosition = AttackPosition;
         copy.Attacker = Attacker;
+        copy.AttackSpeed = AttackSpeed;
         return copy;
     }
 }
+
