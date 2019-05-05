@@ -367,6 +367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 0
+  charactor: 0
   IsMoving: 0
   IsOnGround: 0
   IsLockOption: 0
@@ -389,6 +390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   m_animator: {fileID: 6884634567573283195}
   m_collider: {fileID: 6884634567573283199}
   m_shakeTime: 0.5
@@ -406,6 +408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   TargetPoint: {x: 0, y: 0}
   Speed: 5
   SpeedAdd: 10
@@ -423,6 +426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1
   AttackDamage:
     Attacker: {fileID: 0}
     AttackForce: 300
@@ -430,6 +434,7 @@ MonoBehaviour:
       Value: 0
     Buffes: []
     AttackPosition: {x: 0, y: 0}
+    AttackSpeed: 0
   IsAttack: 0
   collider: {fileID: 6884634567573283199}
 --- !u!114 &1640981649181092330
@@ -445,3 +450,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  FunctionEnable: 1

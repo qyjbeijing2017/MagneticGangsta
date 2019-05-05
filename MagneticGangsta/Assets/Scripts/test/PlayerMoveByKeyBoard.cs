@@ -37,7 +37,7 @@ public class PlayerMoveByKeyBoard : PlayerFunctionBase
             force += PlayerForce;
         }
         float joyforce = Input.GetAxis("Move" + Player.ID) * PlayerForce;
-        if (joyforce > 0.3)
+        if (Mathf.Abs(joyforce) > 0.3)
         {
             return;
         }

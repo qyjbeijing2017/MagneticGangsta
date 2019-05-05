@@ -21,7 +21,7 @@ public class CycloudAttack : AttackSimple
             float u = (collision.transform.position - transform.position).magnitude / collider.radius;
 
             damage.AttackForce = AttackDamage.AttackForce * Mathf.Lerp(1, centerForce, u);
-            beHit.OnBeHitBefore(damage);
+            BeHitWihVOrF(beHit ,damage);
             if (Player.OnAttack != null)
             {
                 Player.OnAttack.Invoke(beHit.Player);

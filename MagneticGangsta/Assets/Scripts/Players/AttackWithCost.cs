@@ -5,7 +5,7 @@ using UnityEngine;
 public class AttackWithCost : AttackBase
 {
 
-    public override string Name { get { return "Attack"; } }
+
     public float AttackCost = 30.0f;
 
     protected override void AttackNow()
