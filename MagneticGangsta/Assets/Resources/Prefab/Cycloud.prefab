@@ -161,7 +161,7 @@ MonoBehaviour:
   FunctionEnable: 1
   AttackDamage:
     Attacker: {fileID: 0}
-    AttackForce: 300
+    AttackForce: 30
     AttackPolarity:
       Value: 0
     Buffes: []
@@ -186,7 +186,7 @@ MonoBehaviour:
   TargetPosition:
     StartTransform: {fileID: 0}
     EndTransform: {fileID: 0}
-  Speed: 3
+  Speed: 2
   MoveAdd: {x: 0, y: 0}
 --- !u!114 &8024702799512589869
 MonoBehaviour:
