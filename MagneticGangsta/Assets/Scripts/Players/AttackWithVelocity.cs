@@ -13,6 +13,8 @@ public class AttackWithVelocity : AttackWithCost
 
         AttackDamage.Attacker = this;
     }
+
+
     protected override void AttackNow()
     {
         if (Player.FunctionBases.ContainsKey("Power"))
@@ -21,6 +23,7 @@ public class AttackWithVelocity : AttackWithCost
             if (!power.PowerCost(AttackCost)) return;
         }
         collider.enabled = true;
+        AttackTime.Start();
         AttackCD.Start();
     }
 
@@ -51,5 +54,16 @@ public class AttackWithVelocity : AttackWithCost
         }
 
 
+    }
+
+
+    protected override void OnTriggerStay2D(Collider2D collision)
+    {
+        //base.OnTriggerStay2D(collision);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        base.OnTriggerStay2D(collision);
     }
 }
