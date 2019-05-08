@@ -754,7 +754,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289986948}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.73, y: 1.26, z: 0}
+  m_LocalPosition: {x: -7.73, y: 0.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1435169002}
@@ -826,68 +826,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 4522180858763905059}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &350696538 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3639821991439264011, guid: 966548d675839d349a0e10c4667b9ff9,
-    type: 3}
-  m_PrefabInstance: {fileID: 1095722820}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &350696539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 350696538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92e05d39bb7f77b47ad38fa01ca6fcb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  FunctionEnable: 1
-  OptionButton: Attack
-  AttackTime:
-    CDTime: 0.1
-  AttackCD:
-    CDTime: 1
-  ReactionCoefficient: 0.5
-  collider: {fileID: 350696544}
-  AttackDamage:
-    Attacker: {fileID: 0}
-    AttackForce: 300
-    AttackPolarity:
-      Value: 0
-    Buffes: []
-    AttackPosition: {x: 0, y: 0}
-    AttackSpeed: 5
-  AttackCost: 30
---- !u!58 &350696544 stripped
-CircleCollider2D:
-  m_CorrespondingSourceObject: {fileID: 7607557362582368449, guid: 966548d675839d349a0e10c4667b9ff9,
-    type: 3}
-  m_PrefabInstance: {fileID: 1095722820}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &350696552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 350696538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33ac0072ab06b63438ee06eaf51fc927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  FunctionEnable: 1
-  IsInvincible: 0
-  AttackForceCoefficient: 1
-  StrikeFlyValue: 0
-  StrikeFlyAddValue: 0.01
-  MinAttackCoefficient: 0.1
-  MaxAttackCoefficient: 20
 --- !u!1 &433067776
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,7 +850,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 433067776}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.14, y: 6.03, z: 0}
+  m_LocalPosition: {x: -4.14, y: 4.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1435169002}
@@ -1006,11 +944,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player_Yellow
       objectReference: {fileID: 0}
-    - target: {fileID: 3639821991439264011, guid: 358902c9e54228d479a02dd71450bc52,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 254806792788272039, guid: 358902c9e54228d479a02dd71450bc52,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1069,37 +1002,22 @@ PrefabInstance:
     - target: {fileID: 8320783250604498056, guid: 358902c9e54228d479a02dd71450bc52,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8320783250604498056, guid: 358902c9e54228d479a02dd71450bc52,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3187744678593355107, guid: 358902c9e54228d479a02dd71450bc52,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3187744678593355107, guid: 358902c9e54228d479a02dd71450bc52,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876028019944168179, guid: 358902c9e54228d479a02dd71450bc52,
-        type: 3}
-      propertyPath: MaxMoveSpeed
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876028019944168179, guid: 358902c9e54228d479a02dd71450bc52,
-        type: 3}
-      propertyPath: PlayerForce
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4560957508259680294, guid: 358902c9e54228d479a02dd71450bc52,
-        type: 3}
-      propertyPath: AttackDamage.AttackForce
-      value: 30
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 358902c9e54228d479a02dd71450bc52, type: 3}
@@ -1338,20 +1256,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player_Blue (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 1597397445722083930, guid: c6422a0f38ec7c744b558723afacb449,
+    - target: {fileID: 1621275402692033262, guid: c6422a0f38ec7c744b558723afacb449,
         type: 3}
-      propertyPath: m_IsActive
+      propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1621275402692033262, guid: c6422a0f38ec7c744b558723afacb449,
         type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1621275402692033262, guid: c6422a0f38ec7c744b558723afacb449,
-        type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3014076278609773571, guid: c6422a0f38ec7c744b558723afacb449,
         type: 3}
@@ -1411,27 +1324,12 @@ PrefabInstance:
     - target: {fileID: 5419926845624711829, guid: c6422a0f38ec7c744b558723afacb449,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5419926845624711829, guid: c6422a0f38ec7c744b558723afacb449,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5866359385626604066, guid: c6422a0f38ec7c744b558723afacb449,
-        type: 3}
-      propertyPath: MaxMoveSpeed
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 5866359385626604066, guid: c6422a0f38ec7c744b558723afacb449,
-        type: 3}
-      propertyPath: PlayerForce
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 6045637132172387231, guid: c6422a0f38ec7c744b558723afacb449,
-        type: 3}
-      propertyPath: AttackDamage.AttackForce
-      value: 30
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6422a0f38ec7c744b558723afacb449, type: 3}
@@ -2015,24 +1913,7 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2876028019944168179, guid: 966548d675839d349a0e10c4667b9ff9,
-        type: 3}
-      propertyPath: MaxMoveSpeed
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876028019944168179, guid: 966548d675839d349a0e10c4667b9ff9,
-        type: 3}
-      propertyPath: PlayerForce
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4560957508259680294, guid: 966548d675839d349a0e10c4667b9ff9,
-        type: 3}
-      propertyPath: AttackDamage.AttackForce
-      value: 30
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1095722822, guid: 966548d675839d349a0e10c4667b9ff9, type: 3}
-    - {fileID: 4560957508259680294, guid: 966548d675839d349a0e10c4667b9ff9, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 966548d675839d349a0e10c4667b9ff9, type: 3}
 --- !u!1 &1166349847
 GameObject:
@@ -2234,7 +2115,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1361199631}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.15, y: 1.26, z: 0}
+  m_LocalPosition: {x: 7.15, y: -0.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1435169002}
@@ -2325,28 +2206,7 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 898450131808486966, guid: f2b3838996916474585dd8d2c1470fbb,
-        type: 3}
-      propertyPath: MaxMoveSpeed
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 898450131808486966, guid: f2b3838996916474585dd8d2c1470fbb,
-        type: 3}
-      propertyPath: PlayerForce
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7541335431291161106, guid: f2b3838996916474585dd8d2c1470fbb,
-        type: 3}
-      propertyPath: AttackDamage.AttackForce
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1548276525, guid: f2b3838996916474585dd8d2c1470fbb, type: 3}
-      propertyPath: FunctionEnable
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7541335431291161106, guid: f2b3838996916474585dd8d2c1470fbb, type: 3}
-    - {fileID: 1371145205, guid: f2b3838996916474585dd8d2c1470fbb, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2b3838996916474585dd8d2c1470fbb, type: 3}
 --- !u!1 &1435169001
 GameObject:
@@ -2956,7 +2816,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2033651053}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.76, y: 6.03, z: 0}
+  m_LocalPosition: {x: 2.76, y: 4.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1435169002}
@@ -3033,68 +2893,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2109805769 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6716117706817560014, guid: f2b3838996916474585dd8d2c1470fbb,
-    type: 3}
-  m_PrefabInstance: {fileID: 1371145203}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2109805770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2109805769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33ac0072ab06b63438ee06eaf51fc927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  FunctionEnable: 1
-  IsInvincible: 0
-  AttackForceCoefficient: 1
-  StrikeFlyValue: 0
-  StrikeFlyAddValue: 0.01
-  MinAttackCoefficient: 0.1
-  MaxAttackCoefficient: 20
---- !u!58 &2109805776 stripped
-CircleCollider2D:
-  m_CorrespondingSourceObject: {fileID: 1902937335536070198, guid: f2b3838996916474585dd8d2c1470fbb,
-    type: 3}
-  m_PrefabInstance: {fileID: 1371145203}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2109805784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2109805769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92e05d39bb7f77b47ad38fa01ca6fcb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  FunctionEnable: 1
-  OptionButton: Attack
-  AttackTime:
-    CDTime: 0.1
-  AttackCD:
-    CDTime: 1
-  ReactionCoefficient: 0.5
-  collider: {fileID: 2109805776}
-  AttackDamage:
-    Attacker: {fileID: 0}
-    AttackForce: 300
-    AttackPolarity:
-      Value: 0
-    Buffes: []
-    AttackPosition: {x: 0, y: 0}
-    AttackSpeed: 5
-  AttackCost: 30
 --- !u!1001 &2131535234
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3225,6 +3023,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TimerCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522180860069206059, guid: 1ef93c984dc96e845a1eec7801e149e0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4522180860069206063, guid: 1ef93c984dc96e845a1eec7801e149e0,
         type: 3}

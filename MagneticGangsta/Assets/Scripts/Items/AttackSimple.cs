@@ -7,7 +7,6 @@ public class AttackSimple : PlayerFunctionBase
     public override string Name { get { return "Attack"; } }
     public DamageBase AttackDamage = new DamageBase();
 
-    public bool IsAttack;
 
     [SerializeField] protected CircleCollider2D collider;
 
@@ -23,7 +22,7 @@ public class AttackSimple : PlayerFunctionBase
     }
 
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collider.IsTouching(collision))
         {
