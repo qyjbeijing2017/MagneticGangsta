@@ -216,6 +216,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e9c484ee0c0f06498f8eecb17d3f252, type: 3}
+--- !u!1 &810805318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 810805320}
+  - component: {fileID: 810805319}
+  m_Layer: 0
+  m_Name: LoadingInGameStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &810805319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810805318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4334ee60340b5c545947543db99c3ae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioController: {fileID: 2762271095924410809, guid: 6d56996632d2c8f4cb5fe2ee2b855e21,
+    type: 3}
+--- !u!4 &810805320
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810805318}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.6255398, y: 2.333255, z: 0.8183594}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1520142928
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,6 +271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1520142930}
   - component: {fileID: 1520142929}
+  - component: {fileID: 1520142931}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -285,6 +331,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1520142931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520142928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e8c6440ee78f974cb55bc99e0578e34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioEvnetName: BeijingKaiChang
 --- !u!1001 &1668111194
 PrefabInstance:
   m_ObjectHideFlags: 0

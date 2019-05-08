@@ -803,6 +803,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1020539867}
   - component: {fileID: 1020539866}
+  - component: {fileID: 1020539868}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -862,6 +863,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1020539868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020539865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d427480bf122094dbda36775d073dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1109588802
 GameObject:
   m_ObjectHideFlags: 0
@@ -1837,11 +1850,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartPanelAll
       objectReference: {fileID: 0}
-    - target: {fileID: 4333467679738444969, guid: 9e9c484ee0c0f06498f8eecb17d3f252,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4333467679768686115, guid: 9e9c484ee0c0f06498f8eecb17d3f252,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1902,6 +1910,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4333467679738444969, guid: 9e9c484ee0c0f06498f8eecb17d3f252,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4333467680610649116, guid: 9e9c484ee0c0f06498f8eecb17d3f252,
         type: 3}
       propertyPath: m_IsActive
@@ -1923,6 +1936,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6535337897709421756, guid: cee3a0beb3893044c842c802aa535692,
+        type: 3}
+      propertyPath: m_Name
+      value: Smokes1
+      objectReference: {fileID: 0}
     - target: {fileID: 6535337897709421758, guid: cee3a0beb3893044c842c802aa535692,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1992,11 +2010,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 3.0572522
-      objectReference: {fileID: 0}
-    - target: {fileID: 6535337897709421756, guid: cee3a0beb3893044c842c802aa535692,
-        type: 3}
-      propertyPath: m_Name
-      value: Smokes1
       objectReference: {fileID: 0}
     - target: {fileID: 6535337898399045643, guid: cee3a0beb3893044c842c802aa535692,
         type: 3}

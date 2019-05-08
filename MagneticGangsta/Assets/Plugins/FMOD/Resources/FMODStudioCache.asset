@@ -16,14 +16,39 @@ MonoBehaviour:
   - {fileID: 114441200796824388}
   - {fileID: 114765644688072030}
   EditorEvents:
-  - {fileID: 114298684667744030}
+  - {fileID: 114215832547945860}
+  - {fileID: 114766540025024850}
+  - {fileID: 114875283227825174}
   EditorParameters: []
   MasterBanks:
   - {fileID: 114765644688072030}
   StringsBanks:
   - {fileID: 114441200796824388}
-  stringsBankWriteTime: 636922145037463077
+  stringsBankWriteTime: 636929351984143736
   cacheVersion: 3
+--- !u!114 &114215832547945860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Beijing1Guan
+  guid: 1c608d891d74574d8c75e6060c252466
+  Banks:
+  - {fileID: 114765644688072030}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &114298684667744030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,11 +85,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\MagneticGangsta\VidoProj\MagneticGangsta\Build\Desktop\Master.strings.bank
-  lastModified: 636922145037463077
+  lastModified: 636929351984143736
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 722
+    Value: 820
   Exists: 1
 --- !u!114 &114765644688072030
 MonoBehaviour:
@@ -79,9 +104,55 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\MagneticGangsta\VidoProj\MagneticGangsta\Build\Desktop\Master.bank
-  lastModified: 636922145037429704
+  lastModified: 636929351984113818
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 2287968
+    Value: 2289216
   Exists: 1
+--- !u!114 &114766540025024850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/BeijingKaiChang
+  guid: b7b82d3adeb37e4e8403da307d3546df
+  Banks:
+  - {fileID: 114765644688072030}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &114875283227825174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/BeijingXuanGuan
+  guid: 15158f17d5fc374b89aedcaa1e83910a
+  Banks:
+  - {fileID: 114765644688072030}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 169926

@@ -866,6 +866,8 @@ GameObject:
   m_Component:
   - component: {fileID: 514530139}
   - component: {fileID: 514530138}
+  - component: {fileID: 514530140}
+  - component: {fileID: 514530141}
   m_Layer: 0
   m_Name: LevelControl
   m_TagString: Untagged
@@ -902,6 +904,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &514530140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514530137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d427480bf122094dbda36775d073dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &514530141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514530137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e8c6440ee78f974cb55bc99e0578e34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioEvnetName: Beijing1Guan
 --- !u!1 &526924157
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,6 +1046,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2894565424208371079, guid: 358902c9e54228d479a02dd71450bc52,
+        type: 3}
+      propertyPath: BeHitEffectTime.CDTime
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 7368125476835749558, guid: 358902c9e54228d479a02dd71450bc52,
         type: 3}
       propertyPath: DelayTime
@@ -1034,10 +1066,20 @@ PrefabInstance:
       propertyPath: FunctionEnable
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2894565424208371079, guid: 358902c9e54228d479a02dd71450bc52,
+    - target: {fileID: 4571860993794817377, guid: 358902c9e54228d479a02dd71450bc52,
         type: 3}
-      propertyPath: BeHitEffectTime.CDTime
-      value: 0.6
+      propertyPath: ReactionCoefficient
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1691168479403694028, guid: 358902c9e54228d479a02dd71450bc52,
+        type: 3}
+      propertyPath: StrikeFlyAddValue
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1691168479403694028, guid: 358902c9e54228d479a02dd71450bc52,
+        type: 3}
+      propertyPath: MinAttackCoefficient
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 358902c9e54228d479a02dd71450bc52, type: 3}
@@ -1351,6 +1393,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6355106414001263655, guid: c6422a0f38ec7c744b558723afacb449,
+        type: 3}
+      propertyPath: BeHitEffectTime.CDTime
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 1053955210, guid: c6422a0f38ec7c744b558723afacb449, type: 3}
       propertyPath: DelayTime
       value: 0.15
@@ -1363,10 +1410,20 @@ PrefabInstance:
       propertyPath: FunctionEnable
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6355106414001263655, guid: c6422a0f38ec7c744b558723afacb449,
+    - target: {fileID: 594617095734592501, guid: c6422a0f38ec7c744b558723afacb449,
         type: 3}
-      propertyPath: BeHitEffectTime.CDTime
-      value: 0.6
+      propertyPath: ReactionCoefficient
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4488057587872571415, guid: c6422a0f38ec7c744b558723afacb449,
+        type: 3}
+      propertyPath: StrikeFlyAddValue
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4488057587872571415, guid: c6422a0f38ec7c744b558723afacb449,
+        type: 3}
+      propertyPath: MinAttackCoefficient
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6422a0f38ec7c744b558723afacb449, type: 3}
@@ -1576,7 +1633,7 @@ MonoBehaviour:
   m_shootRight: 13
   m_shootHeight: 13
   m_shootCD:
-    CDTime: 1
+    CDTime: 12
   m_meteorite: {fileID: 6884634567573283192, guid: 07667e87fdc36f0419982d2a59bdf375,
     type: 3}
   m_rayMask:
@@ -1950,22 +2007,15 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1494213306, guid: 966548d675839d349a0e10c4667b9ff9, type: 3}
-      propertyPath: DelayTime
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1494213306, guid: 966548d675839d349a0e10c4667b9ff9, type: 3}
-      propertyPath: DelayLength
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1494213306, guid: 966548d675839d349a0e10c4667b9ff9, type: 3}
-      propertyPath: FunctionEnable
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2614299382532119817, guid: 966548d675839d349a0e10c4667b9ff9,
+    - target: {fileID: 4786839973255617824, guid: 966548d675839d349a0e10c4667b9ff9,
         type: 3}
-      propertyPath: BeHitEffectTime.CDTime
-      value: 0.6
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786839973255617824, guid: 966548d675839d349a0e10c4667b9ff9,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 966548d675839d349a0e10c4667b9ff9, type: 3}
@@ -2260,6 +2310,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6002276062709308254, guid: f2b3838996916474585dd8d2c1470fbb,
+        type: 3}
+      propertyPath: BeHitEffectTime.CDTime
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 1518935208, guid: f2b3838996916474585dd8d2c1470fbb, type: 3}
       propertyPath: DelayTime
       value: 0.15
@@ -2272,10 +2327,17 @@ PrefabInstance:
       propertyPath: FunctionEnable
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6002276062709308254, guid: f2b3838996916474585dd8d2c1470fbb,
-        type: 3}
-      propertyPath: BeHitEffectTime.CDTime
-      value: 0.6
+    - target: {fileID: 2109805770, guid: f2b3838996916474585dd8d2c1470fbb, type: 3}
+      propertyPath: StrikeFlyAddValue
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2109805770, guid: f2b3838996916474585dd8d2c1470fbb, type: 3}
+      propertyPath: MinAttackCoefficient
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2109805784, guid: f2b3838996916474585dd8d2c1470fbb, type: 3}
+      propertyPath: ReactionCoefficient
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2b3838996916474585dd8d2c1470fbb, type: 3}
@@ -2909,7 +2971,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2033848156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2941,7 +3003,7 @@ MonoBehaviour:
   - StartTransform: {fileID: 315427145}
     EndTransform: {fileID: 965190791}
   CreatCd:
-    CDTime: 1
+    CDTime: 21
 --- !u!4 &2033848157
 Transform:
   m_ObjectHideFlags: 0

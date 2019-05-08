@@ -54,7 +54,9 @@ public class AnimationController : PlayerFunctionBase
             if (inputDir > 0.3) Player.transform.localScale = new Vector3(1, 1, 1);
         }
 
-        m_animator.SetFloat("MoveSpeed", Mathf.Abs(inputDir));
+        if (Mathf.Abs(inputDir) >= 0.3)
+            m_animator.SetFloat("MoveSpeed", Mathf.Abs(inputDir));
+
         m_animator.SetBool("Defence", Player.IsDefence);
     }
 

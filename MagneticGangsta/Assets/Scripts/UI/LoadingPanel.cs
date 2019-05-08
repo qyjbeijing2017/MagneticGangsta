@@ -25,6 +25,6 @@ public class LoadingPanel : UIBase
     // Update is called once per frame
     void Update()
     {
-        m_loadingText.text = m_loadingTextStart + LoadSceneManager.Instance.LoadProgress * 100 + "%";
+        m_loadingText.text = m_loadingTextStart + (int)(LoadSceneManager.Instance.LoadProgress * 100) + "%";
     }
 }
