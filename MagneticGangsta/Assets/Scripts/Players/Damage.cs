@@ -11,6 +11,7 @@ public class DamageBase : System.Object
     public List<PlayerBuffBase> Buffes = new List<PlayerBuffBase>();
     [HideInInspector] public Vector2 AttackPosition = Vector2.zero;
     public float AttackSpeed;
+    public bool BeHitEffectOn = true;
 
     public virtual DamageBase Copy()
     {
@@ -21,6 +22,7 @@ public class DamageBase : System.Object
         copy.AttackPosition = AttackPosition;
         copy.Attacker = Attacker;
         copy.AttackSpeed = AttackSpeed;
+        copy.BeHitEffectOn = BeHitEffectOn;
         return copy;
     }
 }

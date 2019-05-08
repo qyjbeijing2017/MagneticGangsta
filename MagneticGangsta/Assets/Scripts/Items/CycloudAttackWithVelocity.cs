@@ -51,5 +51,6 @@ public class CycloudAttackWithVelocity : CycloudAttack
     }
     private void OnDestroy()
     {
+        AttackInterval.OnTimeOut -= OnAttackEnable;
     }
 }

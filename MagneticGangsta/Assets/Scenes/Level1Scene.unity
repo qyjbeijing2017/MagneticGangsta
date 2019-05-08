@@ -1019,6 +1019,26 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7368125476835749558, guid: 358902c9e54228d479a02dd71450bc52,
+        type: 3}
+      propertyPath: DelayTime
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368125476835749558, guid: 358902c9e54228d479a02dd71450bc52,
+        type: 3}
+      propertyPath: DelayLength
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368125476835749558, guid: 358902c9e54228d479a02dd71450bc52,
+        type: 3}
+      propertyPath: FunctionEnable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894565424208371079, guid: 358902c9e54228d479a02dd71450bc52,
+        type: 3}
+      propertyPath: BeHitEffectTime.CDTime
+      value: 0.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 358902c9e54228d479a02dd71450bc52, type: 3}
 --- !u!1001 &563275313
@@ -1331,6 +1351,23 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1053955210, guid: c6422a0f38ec7c744b558723afacb449, type: 3}
+      propertyPath: DelayTime
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1053955210, guid: c6422a0f38ec7c744b558723afacb449, type: 3}
+      propertyPath: DelayLength
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1053955210, guid: c6422a0f38ec7c744b558723afacb449, type: 3}
+      propertyPath: FunctionEnable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6355106414001263655, guid: c6422a0f38ec7c744b558723afacb449,
+        type: 3}
+      propertyPath: BeHitEffectTime.CDTime
+      value: 0.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6422a0f38ec7c744b558723afacb449, type: 3}
 --- !u!1 &865924766
@@ -1539,7 +1576,7 @@ MonoBehaviour:
   m_shootRight: 13
   m_shootHeight: 13
   m_shootCD:
-    CDTime: 12
+    CDTime: 1
   m_meteorite: {fileID: 6884634567573283192, guid: 07667e87fdc36f0419982d2a59bdf375,
     type: 3}
   m_rayMask:
@@ -1913,6 +1950,23 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1494213306, guid: 966548d675839d349a0e10c4667b9ff9, type: 3}
+      propertyPath: DelayTime
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494213306, guid: 966548d675839d349a0e10c4667b9ff9, type: 3}
+      propertyPath: DelayLength
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494213306, guid: 966548d675839d349a0e10c4667b9ff9, type: 3}
+      propertyPath: FunctionEnable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2614299382532119817, guid: 966548d675839d349a0e10c4667b9ff9,
+        type: 3}
+      propertyPath: BeHitEffectTime.CDTime
+      value: 0.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 966548d675839d349a0e10c4667b9ff9, type: 3}
 --- !u!1 &1166349847
@@ -2205,6 +2259,23 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518935208, guid: f2b3838996916474585dd8d2c1470fbb, type: 3}
+      propertyPath: DelayTime
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518935208, guid: f2b3838996916474585dd8d2c1470fbb, type: 3}
+      propertyPath: DelayLength
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518935208, guid: f2b3838996916474585dd8d2c1470fbb, type: 3}
+      propertyPath: FunctionEnable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6002276062709308254, guid: f2b3838996916474585dd8d2c1470fbb,
+        type: 3}
+      propertyPath: BeHitEffectTime.CDTime
+      value: 0.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2b3838996916474585dd8d2c1470fbb, type: 3}
@@ -2838,7 +2909,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2033848156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2870,7 +2941,7 @@ MonoBehaviour:
   - StartTransform: {fileID: 315427145}
     EndTransform: {fileID: 965190791}
   CreatCd:
-    CDTime: 21
+    CDTime: 1
 --- !u!4 &2033848157
 Transform:
   m_ObjectHideFlags: 0
