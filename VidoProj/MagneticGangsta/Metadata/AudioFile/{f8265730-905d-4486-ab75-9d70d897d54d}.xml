@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{f8265730-905d-4486-ab75-9d70d897d54d}">
+		<property name="assetPath">
+			<value>死亡坠落.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.5265306122448981</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a8917684-a6dd-44ee-a3b5-21bc550db684}</destination>
+		</relationship>
+	</object>
+</objects>

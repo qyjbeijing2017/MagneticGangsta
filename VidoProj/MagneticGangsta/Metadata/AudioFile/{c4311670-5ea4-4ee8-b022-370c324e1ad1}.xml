@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{c4311670-5ea4-4ee8-b022-370c324e1ad1}">
+		<property name="assetPath">
+			<value>机械门开门1.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.7200000000000002</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a8917684-a6dd-44ee-a3b5-21bc550db684}</destination>
+		</relationship>
+	</object>
+</objects>
