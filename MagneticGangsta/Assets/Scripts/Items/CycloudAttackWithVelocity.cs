@@ -4,7 +4,19 @@ using UnityEngine;
 
 public class CycloudAttackWithVelocity : CycloudAttack
 {
-    CDBase AttackInterval = new CDBase(0.3f);
+    [SerializeField] CDBase AttackInterval = new CDBase(0.3f);
+
+    bool Attack = false;
+    private void FixedUpdate()
+    {
+        collider.enabled = false;
+        if (Attack)
+        {
+            collider.enabled = true;
+            Attack = false;
+
+        }
+    }
 
     public override void PlayerInit()
     {
@@ -14,15 +26,19 @@ public class CycloudAttackWithVelocity : CycloudAttack
         AttackInterval.Start();
     }
 
+
+
+
     public virtual void OnAttackEnable()
     {
-        collider.enabled = true;
+        Attack = true;
         AttackInterval.Start();
     }
 
+
     public override void PlayerLoop()
     {
-        collider.enabled = false;
+
         base.PlayerLoop();
     }
 
@@ -34,6 +50,11 @@ public class CycloudAttackWithVelocity : CycloudAttack
     protected override void BeHitWihVOrF(BeHitBase beHit, DamageBase damage)
     {
         damage.AttackSpeed = damage.AttackForce;
+        beHit.Player.PlayerRigidbody2D.velocity = Vector3.zero;
         base.BeHitWihVOrF(beHit, damage);
+    }
+    private void OnDestroy()
+    {
+        AttackInterval.OnTimeOut -= OnAttackEnable;
     }
 }

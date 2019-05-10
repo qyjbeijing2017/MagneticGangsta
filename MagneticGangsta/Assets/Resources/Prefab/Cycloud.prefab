@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 115022342418595586}
   - component: {fileID: 115022342418595596}
   - component: {fileID: 6537117272599814912}
-  - component: {fileID: 7755501414871339582}
   - component: {fileID: 896720271457445065}
   - component: {fileID: 8024702799512589869}
+  - component: {fileID: 7671158732442151109}
   m_Layer: 0
   m_Name: Cycloud
   m_TagString: Untagged
@@ -145,30 +145,6 @@ MonoBehaviour:
   PlayerPolarity:
     Value: 2
   MainCollider: {fileID: 0}
---- !u!114 &7755501414871339582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 115022342418595592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08b4c9123ef842d41a59390462c75a69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  FunctionEnable: 1
-  AttackDamage:
-    Attacker: {fileID: 0}
-    AttackForce: 30
-    AttackPolarity:
-      Value: 0
-    Buffes: []
-    AttackPosition: {x: 0, y: 0}
-  IsAttack: 0
-  collider: {fileID: 115022342418595596}
-  centerForce: 0.134
 --- !u!114 &896720271457445065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,3 +178,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
   FunctionEnable: 1
+--- !u!114 &7671158732442151109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115022342418595592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02f25fcef83b99144b7e22e979b926ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  FunctionEnable: 1
+  AttackDamage:
+    Attacker: {fileID: 0}
+    AttackForce: 300
+    AttackPolarity:
+      Value: 0
+    Buffes: []
+    AttackPosition: {x: 0, y: 0}
+    AttackSpeed: 10
+    BeHitEffectOn: 0
+  collider: {fileID: 115022342418595596}
+  centerForce: 0.342
+  AttackInterval:
+    CDTime: 0.2

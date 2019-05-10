@@ -15,6 +15,13 @@ public class BeHitWithVelocity : BeHitWithAddPower
     protected override void BeHitWihVOrF(DamageBase damage, Vector2 myPoistion2Target)
     {
         damage.AttackSpeed = damage.AttackForce;
+
+        if (damage.AttackPolarity == Polarity.None)
+        {
+            PlayerRigidbody2D.velocity -= myPoistion2Target * damage.AttackSpeed;
+            return;
+        }
+
         if (damage.AttackPolarity != Player.PlayerPolarity)
         {
             PlayerRigidbody2D.velocity += myPoistion2Target * damage.AttackSpeed;
@@ -23,5 +30,6 @@ public class BeHitWithVelocity : BeHitWithAddPower
         {
             PlayerRigidbody2D.velocity -= myPoistion2Target * damage.AttackSpeed;
         }
+
     }
 }

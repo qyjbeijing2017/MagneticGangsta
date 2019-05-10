@@ -23,10 +23,18 @@ public class GroundCheck : PlayerFunctionBase
         Player.OnExitGround += InitCheckGorundBefore;
     }
 
+    private void FixedUpdate()
+    {
+        if (!Player.IsLockOption && FunctionEnable)
+        {
+            CheckOnGround();
+            CheckOnGroundBefore();
+        }
+    }
+
     private void Update()
     {
-        CheckOnGround();
-        CheckOnGroundBefore();
+
     }
 
 

@@ -15,6 +15,7 @@ public class MeteoriteFall : PlayerFunctionBase
     public event UnityAction OnBoom;
 
     private bool isBoomed = false;
+    private Vector2 MoveDir;
     private Vector2 Pos2Target
     {
         get
@@ -32,6 +33,7 @@ public class MeteoriteFall : PlayerFunctionBase
             collider = GetComponent<Collider2D>();
         }
         transform.up = Pos2Target;
+        MoveDir = Pos2Target.normalized;
         collider.isTrigger = true;
     }
 
@@ -46,7 +48,7 @@ public class MeteoriteFall : PlayerFunctionBase
         if (!isBoomed)
         {
             Speed += SpeedAdd * Time.fixedDeltaTime;
-            PlayerRigidbody2D.velocity = (Vector3)Pos2Target.normalized * Speed;
+            PlayerRigidbody2D.velocity = (Vector3)MoveDir * Speed;
             transform.up = PlayerRigidbody2D.velocity;
         }
         else

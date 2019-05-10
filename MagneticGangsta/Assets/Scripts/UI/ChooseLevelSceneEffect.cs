@@ -14,12 +14,28 @@ public class ChooseLevelSceneEffect : MonoBehaviour
     void Start()
     {
         Level1.onClick.AddListener(OnChooseLevel1);
+        Level2.onClick.AddListener(OnChooseLevel2);
+        Level3.onClick.AddListener(OnChooseLevel3);
     }
+
 
     void OnChooseLevel1()
     {
         LoadSceneManager.Instance.LoadSceneAsync("Level1Scene");
+
+        AudioController.Instance.GetEvent("BeijingKaiChang").stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
+    void OnChooseLevel2()
+    {
+        LoadSceneManager.Instance.LoadSceneAsync("Level2Scene");
+        AudioController.Instance.GetEvent("BeijingKaiChang").stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    }
+    void OnChooseLevel3()
+    {
+        LoadSceneManager.Instance.LoadSceneAsync("Level3Scene");
+        AudioController.Instance.GetEvent("BeijingKaiChang").stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    }
+
     // Update is called once per frame
     void Update()
     {

@@ -23,6 +23,8 @@ public class BuffAttributesData
 
     public BuffAttributeBase<bool> IsLockMove;
 
+    public BuffAttributeBase<float> AnimatorSpeed;
+
     #endregion
 
     #region 登记属性修改位置
@@ -38,6 +40,7 @@ public class BuffAttributesData
             AttackForceCoefficient = new BuffAttributeBase<float>((m_player.FunctionBases["BeHit"] as BeHitWithCoefficient).AttackForceCoefficient);
 
         IsLockMove = new BuffAttributeBase<bool>(m_player.FunctionBases["Move"].FunctionEnable);
+        AnimatorSpeed = new BuffAttributeBase<float>(m_player.GetComponent<Animator>().speed);
     }
 
     /// <summary>
@@ -51,7 +54,7 @@ public class BuffAttributesData
             (m_player.FunctionBases["BeHit"] as BeHitWithCoefficient).AttackForceCoefficient = AttackForceCoefficient.Attribute;
 
         m_player.FunctionBases["Move"].FunctionEnable = IsLockMove.Attribute;
-
+        m_player.GetComponent<Animator>().speed = AnimatorSpeed.Attribute;
     }
     #endregion
 }

@@ -42,7 +42,8 @@ public class PlayerBuffManager : MonoBehaviour
             m_arrtibutes.OutData();
         }
     }
-
+    
+   
 
     #region Mono功能
 

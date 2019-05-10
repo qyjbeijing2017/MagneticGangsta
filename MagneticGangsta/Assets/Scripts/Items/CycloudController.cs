@@ -33,6 +33,14 @@ public class CycloudController : MonoBehaviour
         CreatCd.Start();
     }
 
+    private void OnBecameVisible()
+    {
+        
+    }
+    private void OnDestroy()
+    {
+        CreatCd.OnTimeOut -= OnCreatCycloud;
+    }
 }
 
 [System.Serializable]

@@ -17,8 +17,17 @@ public class BeHitWithNonePolarity : BeHitWithCoefficient
         if (damage.AttackPolarity == Polarity.None)
         {
             Vector2 myPoistion2Target = (damage.AttackPosition - new Vector2(Player.transform.position.x, Player.transform.position.y)).normalized;
-            PlayerRigidbody2D.AddForce(-myPoistion2Target * damage.AttackForce * AttackForceCoefficient);
+            BeHitWihVOrF(damage, myPoistion2Target);
             Player.OnBeHit?.Invoke(damage);
+        }
+    }
+
+    protected override void BeHitWihVOrF(DamageBase damage, Vector2 myPoistion2Target)
+    {
+        base.BeHitWihVOrF(damage, myPoistion2Target);
+        if (damage.AttackPolarity == Polarity.None)
+        {
+            PlayerRigidbody2D.AddForce(myPoistion2Target * damage.AttackForce);
         }
     }
 }

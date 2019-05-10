@@ -30,13 +30,17 @@ public class TauntShow : PlayerFunctionBase
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Taunt" + Player.ID) && m_showTime.CD == 1)
+        if (Input.GetButtonDown("Taunt" + Player.ID))
         {
             int chooseFace = Random.Range(0, m_sprites.Count);
             m_face.sprite = m_sprites[chooseFace];
+            if(m_face.color.a < 0.3)
+            {
+                m_bubble.GetComponent<Image>().DOFade(1, m_appearTime);
+                m_face.GetComponent<Image>().DOFade(1, m_appearTime);
+            }
             m_showTime.Start();
-            m_bubble.GetComponent<Image>().DOFade(1, m_appearTime);
-            m_face.GetComponent<Image>().DOFade(1, m_appearTime);
+
         }
     }
 }

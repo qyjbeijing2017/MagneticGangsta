@@ -16,10 +16,20 @@ public class Move : PlayerFunctionBase
     {
         m_rigidbody2d = GetComponent<Rigidbody2D>();
     }
+    private void FixedUpdate()
+    {
+        if (!Player.IsLockOption && FunctionEnable)
+        {
+            Moving();
+            CheckMoving();
+
+        }
+
+    }
+
     public override void PlayerLoop()
     {
-        Moving();
-        CheckMoving();
+
     }
 
     public void Moving()

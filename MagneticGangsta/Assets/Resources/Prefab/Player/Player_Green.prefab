@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 613378759}
   - component: {fileID: 613378758}
   m_Layer: 9
-  m_Name: Image (1)
+  m_Name: bunddle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,8 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1846932179}
   m_Father: {fileID: 5816168405137963617}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -66,6 +67,80 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: d358162b329c39541bb734740f0cc621, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!1 &1846932176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1846932179}
+  - component: {fileID: 1846932178}
+  - component: {fileID: 1846932177}
+  m_Layer: 9
+  m_Name: face
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1846932179
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846932176}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 613378757}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 180, y: 180}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1846932178
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846932176}
+  m_CullTransparentMesh: 0
+--- !u!114 &1846932177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846932176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 6fb0006862871a14ea55c73af047ef0c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -611,7 +686,6 @@ GameObject:
   - component: {fileID: 2876028019944168179}
   - component: {fileID: 8167002999829825265}
   - component: {fileID: 5100897290944126247}
-  - component: {fileID: 4560957508259680294}
   - component: {fileID: 159329180152812619}
   - component: {fileID: 3519629107842725500}
   - component: {fileID: 2953004972124559800}
@@ -624,6 +698,9 @@ GameObject:
   - component: {fileID: 1521795735}
   - component: {fileID: 1521795712}
   - component: {fileID: 3355195373354240691}
+  - component: {fileID: 350696539}
+  - component: {fileID: 350696540}
+  - component: {fileID: 350696552}
   - component: {fileID: 1095722822}
   m_Layer: 9
   m_Name: Player_Green
@@ -821,8 +898,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
   FunctionEnable: 1
-  PlayerForce: 15
-  MaxMoveSpeed: 12
+  PlayerForce: 12
+  MaxMoveSpeed: 15
 --- !u!114 &8167002999829825265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -860,35 +937,6 @@ MonoBehaviour:
   GroundMask:
     serializedVersion: 2
     m_Bits: 1536
---- !u!114 &4560957508259680294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3639821991439264011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa7ef4e833df4df479aaf6aca2341dec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  FunctionEnable: 1
-  OptionButton: Attack
-  AttackTime:
-    CDTime: 0.1
-  AttackCD:
-    CDTime: 1
-  ReactionCoefficient: 0.5
-  collider: {fileID: 0}
-  AttackDamage:
-    Attacker: {fileID: 0}
-    AttackForce: 100
-    AttackPolarity:
-      Value: 0
-    Buffes: []
-    AttackPosition: {x: 0, y: 0}
-  AttackCost: 30
 --- !u!114 &159329180152812619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -969,7 +1017,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   FunctionEnable: 1
   BeHitEffectTime:
-    CDTime: 0.3
+    CDTime: 0.4
   HitAngle: 60
   m_platformEffector: {fileID: 0}
 --- !u!114 &4921034289909576380
@@ -1038,7 +1086,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
   FunctionEnable: 1
-  DelayTime: 0.3
+  DelayTime: 0.15
+  DelayLength: 0.1
 --- !u!70 &1521795735
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1085,6 +1134,81 @@ MonoBehaviour:
   FunctionEnable: 1
   m_rebornEffect: {fileID: 7541289374466220846, guid: 6ad292d98d41c8f49a89aafdf9a2ce45,
     type: 3}
+--- !u!114 &350696539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3639821991439264011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92e05d39bb7f77b47ad38fa01ca6fcb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  FunctionEnable: 1
+  OptionButton: Attack
+  AttackTime:
+    CDTime: 0.1
+  AttackCD:
+    CDTime: 1
+  ReactionCoefficient: 0.5
+  collider: {fileID: 7607557362582368449}
+  AttackDamage:
+    Attacker: {fileID: 0}
+    AttackForce: 300
+    AttackPolarity:
+      Value: 0
+    Buffes: []
+    AttackPosition: {x: 0, y: 0}
+    AttackSpeed: 10
+    BeHitEffectOn: 1
+  AttackCost: 30
+--- !u!114 &350696540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3639821991439264011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 576120bdc2072db4a8f44c2c9547ad29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  FunctionEnable: 1
+  m_sprites:
+  - {fileID: 21300000, guid: e0f8df7cec13b5f42bccf44398bc8226, type: 3}
+  - {fileID: 21300000, guid: 92c5db526a7f607478c76ec5828d7471, type: 3}
+  - {fileID: 21300000, guid: dc4606dd705167546b61b38ab33ad7c1, type: 3}
+  - {fileID: 21300000, guid: 6fb0006862871a14ea55c73af047ef0c, type: 3}
+  m_bubble: {fileID: 613378756}
+  m_face: {fileID: 1846932177}
+  m_showTime:
+    CDTime: 2
+  m_appearTime: 0.1
+--- !u!114 &350696552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3639821991439264011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33ac0072ab06b63438ee06eaf51fc927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  FunctionEnable: 1
+  IsInvincible: 0
+  AttackForceCoefficient: 1
+  StrikeFlyValue: 0
+  StrikeFlyAddValue: 0.2
+  MinAttackCoefficient: 0.3
+  MaxAttackCoefficient: 3
 --- !u!114 &1095722822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1094,17 +1218,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3639821991439264011}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32d95c3e08fe1e1439530ccad3426921, type: 3}
+  m_Script: {fileID: 11500000, guid: 035ad11a8515d8347a5d57f629936ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
   FunctionEnable: 1
-  IsInvincible: 0
-  AttackForceCoefficient: 1
-  StrikeFlyValue: 0
-  StrikeFlyAddValue: 0.01
-  MinAttackCoefficient: 0.1
-  MaxAttackCoefficient: 20
+  left: 106
+  right: 108
 --- !u!1 &4432515748939213797
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,7 +1258,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1478,7 +1598,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2984224070027031228
 RectTransform:
   m_ObjectHideFlags: 0

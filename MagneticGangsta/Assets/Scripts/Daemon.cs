@@ -61,5 +61,9 @@ public class Daemon : MonoSingleton<Daemon>
     {
         return Instance;
     }
+    private void OnDestroy()
+    {
+        DaemonUpdate = null;
+    }
 }
 
