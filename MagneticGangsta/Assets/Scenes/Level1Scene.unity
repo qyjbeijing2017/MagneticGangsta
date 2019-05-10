@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -754,7 +754,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289986948}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.73, y: 0.06, z: 0}
+  m_LocalPosition: {x: -7.73, y: 1.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1435169002}
@@ -850,7 +850,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 433067776}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.14, y: 4.21, z: 0}
+  m_LocalPosition: {x: -4.14, y: 6.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1435169002}
@@ -866,8 +866,6 @@ GameObject:
   m_Component:
   - component: {fileID: 514530139}
   - component: {fileID: 514530138}
-  - component: {fileID: 514530140}
-  - component: {fileID: 514530141}
   m_Layer: 0
   m_Name: LevelControl
   m_TagString: Untagged
@@ -904,31 +902,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &514530140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 514530137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d427480bf122094dbda36775d073dec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &514530141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 514530137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e8c6440ee78f974cb55bc99e0578e34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AudioEvnetName: Beijing1Guan
 --- !u!1 &526924157
 GameObject:
   m_ObjectHideFlags: 0
@@ -1045,6 +1018,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876028019944168179, guid: 358902c9e54228d479a02dd71450bc52,
+        type: 3}
+      propertyPath: MaxMoveSpeed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876028019944168179, guid: 358902c9e54228d479a02dd71450bc52,
+        type: 3}
+      propertyPath: PlayerForce
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560957508259680294, guid: 358902c9e54228d479a02dd71450bc52,
+        type: 3}
+      propertyPath: AttackDamage.AttackForce
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 358902c9e54228d479a02dd71450bc52, type: 3}
@@ -1357,6 +1345,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866359385626604066, guid: c6422a0f38ec7c744b558723afacb449,
+        type: 3}
+      propertyPath: MaxMoveSpeed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866359385626604066, guid: c6422a0f38ec7c744b558723afacb449,
+        type: 3}
+      propertyPath: PlayerForce
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6045637132172387231, guid: c6422a0f38ec7c744b558723afacb449,
+        type: 3}
+      propertyPath: AttackDamage.AttackForce
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6422a0f38ec7c744b558723afacb449, type: 3}
@@ -1940,21 +1943,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4786839973255617824, guid: 966548d675839d349a0e10c4667b9ff9,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4786839973255617824, guid: 966548d675839d349a0e10c4667b9ff9,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 478938102041058144, guid: 966548d675839d349a0e10c4667b9ff9,
-        type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 966548d675839d349a0e10c4667b9ff9, type: 3}
 --- !u!1 &1166349847
@@ -2157,7 +2145,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1361199631}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.15, y: -0.03, z: 0}
+  m_LocalPosition: {x: 7.15, y: 1.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1435169002}
@@ -2858,7 +2846,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2033651053}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.76, y: 4.45, z: 0}
+  m_LocalPosition: {x: 2.76, y: 6.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1435169002}
@@ -3065,11 +3053,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TimerCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 4522180860069206059, guid: 1ef93c984dc96e845a1eec7801e149e0,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4522180860069206063, guid: 1ef93c984dc96e845a1eec7801e149e0,
         type: 3}
