@@ -6,6 +6,17 @@ public class CycloudAttackWithVelocity : CycloudAttack
 {
     [SerializeField] CDBase AttackInterval = new CDBase(0.3f);
 
+    bool Attack = false;
+    private void FixedUpdate()
+    {
+        collider.enabled = false;
+        if (Attack)
+        {
+            collider.enabled = true;
+            Attack = false;
+
+        }
+    }
 
     public override void PlayerInit()
     {
@@ -20,17 +31,10 @@ public class CycloudAttackWithVelocity : CycloudAttack
 
     public virtual void OnAttackEnable()
     {
-        StartCoroutine(Attack());
+        Attack = true;
         AttackInterval.Start();
     }
 
-    IEnumerator Attack()
-    {
-        collider.enabled = true;
-        yield return 0;
-        yield return 0;
-        collider.enabled = false;
-    }
 
     public override void PlayerLoop()
     {

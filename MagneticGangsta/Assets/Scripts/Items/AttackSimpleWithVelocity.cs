@@ -4,7 +4,18 @@ using UnityEngine;
 
 public class AttackSimpleWithVelocity :AttackSimple
 {
+    public bool Attack = false;
 
+
+    private void FixedUpdate()
+    {
+        collider.enabled = false;
+        if(Attack)
+        {
+            collider.enabled = true;
+            Attack = false;
+        }
+    }
 
     public override void PlayerInit()
     {
@@ -14,12 +25,12 @@ public class AttackSimpleWithVelocity :AttackSimple
 
     public virtual void OnAttackEnable()
     {
-        collider.enabled = true;
+        Attack = true;
     }
 
     public override void PlayerLoop()
     {
-        collider.enabled = false;
+        
         base.PlayerLoop();
     }
 

@@ -22,16 +22,26 @@ public class AttackWithVelocity : AttackWithCost
             Power power = Player.FunctionBases["Power"] as Power;
             if (!power.PowerCost(AttackCost)) return;
         }
-        collider.enabled = true;
+        attack = true;
         AttackTime.Start();
         AttackCD.Start();
     }
 
+    bool attack = false;
+    private void FixedUpdate()
+    {
+        collider.enabled = false;
+        if (attack)
+        {
+            collider.enabled = true;
+            attack = false;
+        }
+        
+    }
 
 
     public override void PlayerLoop()
     {
-        collider.enabled = false;
         base.PlayerLoop();
     }
 

@@ -19,6 +19,11 @@ public class Jump : PlayerFunctionBase
         Player.OnGround += OnGround;
     }
 
+    private void FixedUpdate()
+    {
+
+    }
+
     public override void PlayerLoop()
     {
         if (Input.GetButtonDown("Jump" + Player.ID) && m_jumpTimes < JumpVelocity.Count)

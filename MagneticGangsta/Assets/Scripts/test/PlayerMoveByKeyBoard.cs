@@ -18,8 +18,16 @@ public class PlayerMoveByKeyBoard : PlayerFunctionBase
     }
     public override void PlayerLoop()
     {
-        Moving();
-        CheckMoving();
+    }
+
+
+    private void FixedUpdate()
+    {
+        if (!Player.IsLockOption && FunctionEnable)
+        {
+            Moving();
+            CheckMoving();
+        }
     }
 
     public void Moving()
