@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="Event" id="{76918de2-27a7-4eab-a88b-cc7084bd0810}">
 		<property name="name">
-			<value>qiehuanliangji+-</value>
+			<value>liangji+-</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
 		</property>
 		<relationship name="folder">
-			<destination>{6e823ba3-2fcb-4fdf-825f-2b63e0a8f30f}</destination>
+			<destination>{4c86fc44-4275-474f-ad15-0e01468f3407}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{92e26aef-7a7e-4544-91ec-4f3ded21a164}</destination>
