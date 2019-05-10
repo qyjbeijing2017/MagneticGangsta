@@ -21,6 +21,8 @@ public class AnimationController : PlayerFunctionBase
         Player.OnJump += OnJump;
         Player.OnGround += OnGround;
 
+        Player.OnBeHit += OnBeHit;
+
         if (Player.FunctionBases.ContainsKey("Attack"))
         {
             AttackBase attack = Player.FunctionBases["Attack"] as AttackBase;
@@ -37,6 +39,12 @@ public class AnimationController : PlayerFunctionBase
             vertigoAction.VertigoAct += OnVertigo;
         }
     }
+
+    private void OnBeHit(DamageBase damage)
+    {
+        m_animator.SetTrigger("blood");
+    }
+
 
     // Update is called once per frame
     void Update()
