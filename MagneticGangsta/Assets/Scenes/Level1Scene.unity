@@ -1046,41 +1046,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2894565424208371079, guid: 358902c9e54228d479a02dd71450bc52,
-        type: 3}
-      propertyPath: BeHitEffectTime.CDTime
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7368125476835749558, guid: 358902c9e54228d479a02dd71450bc52,
-        type: 3}
-      propertyPath: DelayTime
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 7368125476835749558, guid: 358902c9e54228d479a02dd71450bc52,
-        type: 3}
-      propertyPath: DelayLength
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7368125476835749558, guid: 358902c9e54228d479a02dd71450bc52,
-        type: 3}
-      propertyPath: FunctionEnable
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4571860993794817377, guid: 358902c9e54228d479a02dd71450bc52,
-        type: 3}
-      propertyPath: ReactionCoefficient
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1691168479403694028, guid: 358902c9e54228d479a02dd71450bc52,
-        type: 3}
-      propertyPath: StrikeFlyAddValue
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1691168479403694028, guid: 358902c9e54228d479a02dd71450bc52,
-        type: 3}
-      propertyPath: MinAttackCoefficient
-      value: 0.3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 358902c9e54228d479a02dd71450bc52, type: 3}
 --- !u!1001 &563275313
@@ -1392,38 +1357,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6355106414001263655, guid: c6422a0f38ec7c744b558723afacb449,
-        type: 3}
-      propertyPath: BeHitEffectTime.CDTime
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1053955210, guid: c6422a0f38ec7c744b558723afacb449, type: 3}
-      propertyPath: DelayTime
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1053955210, guid: c6422a0f38ec7c744b558723afacb449, type: 3}
-      propertyPath: DelayLength
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1053955210, guid: c6422a0f38ec7c744b558723afacb449, type: 3}
-      propertyPath: FunctionEnable
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 594617095734592501, guid: c6422a0f38ec7c744b558723afacb449,
-        type: 3}
-      propertyPath: ReactionCoefficient
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4488057587872571415, guid: c6422a0f38ec7c744b558723afacb449,
-        type: 3}
-      propertyPath: StrikeFlyAddValue
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4488057587872571415, guid: c6422a0f38ec7c744b558723afacb449,
-        type: 3}
-      propertyPath: MinAttackCoefficient
-      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6422a0f38ec7c744b558723afacb449, type: 3}
@@ -2017,6 +1950,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 478938102041058144, guid: 966548d675839d349a0e10c4667b9ff9,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 966548d675839d349a0e10c4667b9ff9, type: 3}
 --- !u!1 &1166349847
@@ -2309,35 +2247,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6002276062709308254, guid: f2b3838996916474585dd8d2c1470fbb,
-        type: 3}
-      propertyPath: BeHitEffectTime.CDTime
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1518935208, guid: f2b3838996916474585dd8d2c1470fbb, type: 3}
-      propertyPath: DelayTime
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1518935208, guid: f2b3838996916474585dd8d2c1470fbb, type: 3}
-      propertyPath: DelayLength
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1518935208, guid: f2b3838996916474585dd8d2c1470fbb, type: 3}
-      propertyPath: FunctionEnable
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2109805770, guid: f2b3838996916474585dd8d2c1470fbb, type: 3}
-      propertyPath: StrikeFlyAddValue
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2109805770, guid: f2b3838996916474585dd8d2c1470fbb, type: 3}
-      propertyPath: MinAttackCoefficient
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2109805784, guid: f2b3838996916474585dd8d2c1470fbb, type: 3}
-      propertyPath: ReactionCoefficient
-      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2b3838996916474585dd8d2c1470fbb, type: 3}
