@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 896720271457445065}
   - component: {fileID: 8024702799512589869}
   - component: {fileID: 7671158732442151109}
+  - component: {fileID: 2052055887030481089}
   m_Layer: 0
   m_Name: Cycloud
   m_TagString: Untagged
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 832277143
   m_SortingLayer: 10
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5ebf7cc640d55b54a9475471bd83f764, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 468aec0a03db7e54c9ac697910223f27, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -205,3 +206,22 @@ MonoBehaviour:
   centerForce: 0.342
   AttackInterval:
     CDTime: 0.2
+--- !u!95 &2052055887030481089
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115022342418595592}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2123b1a8b82c7da45b8a72ad5f5423a9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
