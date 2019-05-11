@@ -2098,6 +2098,15 @@ MonoBehaviour:
   m_rightEdge: 22
   m_topEdge: 14
   m_buttonEdge: -14
+  rebornEffectRed: {fileID: 7585161108659996335, guid: 1404f945cc739e14d922e39ff96c0d56,
+    type: 3}
+  rebornEffectBlue: {fileID: 9028962953619457888, guid: 0b8bc4fb695d82947aa0a635d3590d3b,
+    type: 3}
+  rebornEffectYellow: {fileID: 2401869646397101862, guid: fbaca76f1eb42464cadddd3990da49f2,
+    type: 3}
+  rebornEffectGreen: {fileID: 2546951269552955274, guid: 1223f2215b946514cad278dc47f4c61f,
+    type: 3}
+  boomEffect2Edge: 1
 --- !u!1001 &1095722820
 PrefabInstance:
   m_ObjectHideFlags: 0
