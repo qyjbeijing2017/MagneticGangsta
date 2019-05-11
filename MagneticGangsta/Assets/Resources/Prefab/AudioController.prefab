@@ -50,3 +50,49 @@ MonoBehaviour:
     EventPath: event:/BeijingKaiChang
   - EventName: BeijingXuanGuan
     EventPath: event:/BeijingXuanGuan
+  - EventName: ciChangKongFang
+    EventPath: event:/youxijiemian/renwu/cichangKongFang
+  - EventName: test2
+    EventPath: event:/BeijingXuanGuan
+  - EventName: FeiChuanFeiGuo
+    EventPath: event:/changjingkaishi/feichuanfeiguo
+  - EventName: test3
+    EventPath: event:/changjingkaishi/jingbaodeng
+  - EventName: test4
+    EventPath: event:/changjingkaishi/kaimen1
+  - EventName: AnNiu1
+    EventPath: event:/kaishijiemian/anniu1
+  - EventName: DaoJiShi1
+    EventPath: event:/youxijiemian/daojishi/daojishi1
+  - EventName: test5
+    EventPath: event:/youxijiemian/daojishi/youxijieshu
+  - EventName: CiChangDaRen
+    EventPath: event:/youxijiemian/renwu/cichang daren
+  - EventName: CiChangFangYu
+    EventPath: event:/youxijiemian/renwu/cichang fangyu
+  - EventName: FuHuo1
+    EventPath: event:/youxijiemian/renwu/fuhuo1
+  - EventName: JingBaoDeng
+    EventPath: event:/changjingkaishi/jingbaodeng
+  - EventName: KaiMen1
+    EventPath: event:/changjingkaishi/kaimen1
+  - EventName: LiangJiJiaJian
+    EventPath: event:/youxijiemian/renwu/liangji+-
+  - EventName: PaoBu1
+    EventPath: event:/youxijiemian/renwu/paobu1
+  - EventName: ShengLi
+    EventPath: event:/youxijiemian/shengli
+  - EventName: SiWang1
+    EventPath: event:/youxijiemian/renwu/siwang1
+  - EventName: SiWangBaoZha2
+    EventPath: event:/youxijiemian/renwu/siwangbaozha2
+  - EventName: TiaoYue1
+    EventPath: event:/youxijiemian/renwu/tiaoyue1
+  - EventName: YouXiJieShu
+    EventPath: event:/youxijiemian/daojishi/youxijieshu
+  - EventName: YunShiBaoZha
+    EventPath: event:/youxijiemian/yunshi/yunshi baozha
+  - EventName: YunShiZhuiLuo
+    EventPath: event:/youxijiemian/yunshi/yunshi zhuiluo
+  - EventName: YunXuan1
+    EventPath: event:/youxijiemian/renwu/yunxuan1

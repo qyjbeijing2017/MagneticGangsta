@@ -17,7 +17,7 @@ public class LoadingPanel : UIBase
     {
         if (isfirstOpen)
         {
-            m_loadingTextStart = m_loadingText.text;
+            //m_loadingTextStart = m_loadingText.text;
         }
     }
 

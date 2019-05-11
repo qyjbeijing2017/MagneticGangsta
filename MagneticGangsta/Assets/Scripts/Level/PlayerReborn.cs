@@ -26,6 +26,14 @@ public class PlayerReborn : MonoBehaviour
     public float TopEdge { get { return m_topEdge; } }
     public float ButtonEdge { get { return m_buttonEdge; } }
 
+
+    [SerializeField] GameObject rebornEffectRed;
+    [SerializeField] GameObject rebornEffectBlue;
+    [SerializeField] GameObject rebornEffectYellow;
+    [SerializeField] GameObject rebornEffectGreen;
+
+    [SerializeField] float boomEffect2Edge;
+
     private void Awake()
     {
         GameObject[] rebornpoints = GameObject.FindGameObjectsWithTag("RebornPoint");
@@ -63,6 +71,44 @@ public class PlayerReborn : MonoBehaviour
 
     private void OnPlayerDie(PlayerBase player)
     {
+
+        Vector2 cameraPos = Camera.main.transform.position;
+        Vector2 playerPos = player.transform.position;
+
+        Vector2 c2p = (playerPos - cameraPos).normalized;
+
+        float hc = Mathf.Abs(CameraFollow.Instance.CameraRightEdge - cameraPos.x) / Mathf.Abs(c2p.x);
+        float vc = Mathf.Abs(CameraFollow.Instance.CameraTopEdge - cameraPos.y) / Mathf.Abs(c2p.y);
+
+        float c = Mathf.Min(hc, vc);
+
+        Vector2 boomPos = (c - boomEffect2Edge) * c2p + cameraPos;
+
+
+
+        switch (player.charactor)
+        {
+            case Charactor.None:
+                break;
+            case Charactor.Red:
+                Instantiate(rebornEffectRed, boomPos, Quaternion.Euler(0, 0, 0));
+                break;
+            case Charactor.Yellow:
+                Instantiate(rebornEffectYellow, boomPos, Quaternion.Euler(0, 0, 0));
+                break;
+            case Charactor.Blue:
+                Instantiate(rebornEffectBlue, boomPos, Quaternion.Euler(0, 0, 0));
+                break;
+            case Charactor.Green:
+                Instantiate(rebornEffectGreen, boomPos, Quaternion.Euler(0, 0, 0));
+                break;
+            default:
+                break;
+        }
+
+
+
+
         StartCoroutine("Reborn", player);
 
     }

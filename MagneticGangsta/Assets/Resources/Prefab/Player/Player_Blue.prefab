@@ -247,7 +247,6 @@ GameObject:
   - component: {fileID: 5866359385626604066}
   - component: {fileID: 755083113521595878}
   - component: {fileID: 5718470692501123431}
-  - component: {fileID: 6045637132172387231}
   - component: {fileID: 2129216095696740855}
   - component: {fileID: 2190959250627225289}
   - component: {fileID: 8392989219317036955}
@@ -286,6 +285,7 @@ Transform:
   - {fileID: 4844098067846048821}
   - {fileID: 7273728608140989784}
   - {fileID: 1243322015}
+  - {fileID: 5268250249007577550}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -500,37 +500,6 @@ MonoBehaviour:
   GroundMask:
     serializedVersion: 2
     m_Bits: 1536
---- !u!114 &6045637132172387231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597397445722083930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa7ef4e833df4df479aaf6aca2341dec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  FunctionEnable: 1
-  OptionButton: Attack
-  AttackTime:
-    CDTime: 0.1
-  AttackCD:
-    CDTime: 1
-  ReactionCoefficient: 0.5
-  collider: {fileID: 0}
-  AttackDamage:
-    Attacker: {fileID: 0}
-    AttackForce: 30
-    AttackPolarity:
-      Value: 0
-    Buffes: []
-    AttackPosition: {x: 0, y: 0}
-    AttackSpeed: 0
-    BeHitEffectOn: 1
-  AttackCost: 30
 --- !u!114 &2129216095696740855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -630,6 +599,7 @@ MonoBehaviour:
   FunctionEnable: 1
   m_animator: {fileID: 492869597770867692}
   MagneticFieldGUI: {fileID: 8799503622634832222}
+  runAnimator: {fileID: 4736523312556570859}
 --- !u!114 &7848314334877792679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -823,6 +793,105 @@ MonoBehaviour:
   StrikeFlyAddValue: 0.2
   MinAttackCoefficient: 0.3
   MaxAttackCoefficient: 3
+--- !u!1 &1960040565725808109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5268250249007577550}
+  - component: {fileID: 7454113604575898618}
+  - component: {fileID: 4736523312556570859}
+  m_Layer: 0
+  m_Name: 'RunSmoke '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5268250249007577550
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960040565725808109}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3014076278609773571}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &7454113604575898618
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960040565725808109}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 589645687
+  m_SortingLayer: 11
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5, y: 5}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!95 &4736523312556570859
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960040565725808109}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b53a18713af5fc7439cbf7503853c646, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4009819476684978506
 GameObject:
   m_ObjectHideFlags: 0

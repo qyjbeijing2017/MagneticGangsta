@@ -41,14 +41,16 @@ public class StartLogic : MonoBehaviour
     {
         Daemon.Instance.Init();
         LoadSceneManager.Instance.LoadSceneAsync("ChooseLevelScene");
+        AudioController.Instance.GetEvent("AnNiu1").start();
     }
 
     public void OnAbout()
     {
-
+        AudioController.Instance.GetEvent("AnNiu1").start();
     }
     public void OnQuit()
     {
         Application.Quit();
+        AudioController.Instance.GetEvent("AnNiu1").start();
     }
 }

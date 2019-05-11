@@ -13,7 +13,11 @@ public class AnimationController : PlayerFunctionBase
     [SerializeField] Transform MagneticFieldGUI;
 
 
+    [SerializeField] Animator runAnimator;
+
     private bool m_isVertigo = false;
+
+    FMOD.Studio.EventInstance runEvent;
 
     public override void PlayerInit()
     {
@@ -38,6 +42,9 @@ public class AnimationController : PlayerFunctionBase
             VertigoAction vertigoAction = Player.FunctionBases["VertigoAction"] as VertigoAction;
             vertigoAction.VertigoAct += OnVertigo;
         }
+
+        runEvent = AudioController.Instance.CreatEvent("PaoBu1");
+        defenceEvent = AudioController.Instance.CreatEvent("PaoBu1");
     }
 
     private void OnBeHit(DamageBase damage)
@@ -45,6 +52,11 @@ public class AnimationController : PlayerFunctionBase
         m_animator.SetTrigger("blood");
     }
 
+
+    void OnAttackBeDefence()
+    {
+        AudioController.Instance.CreatEvent("ciChangFangYu").start();
+    }
 
     // Update is called once per frame
     void Update()
@@ -63,14 +75,37 @@ public class AnimationController : PlayerFunctionBase
         }
 
         if (Mathf.Abs(inputDir) >= 0.3)
+        {
             m_animator.SetFloat("MoveSpeed", Mathf.Abs(inputDir));
 
+            runEvent.start();
+        }
+        else
+        {
+            runEvent.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        }
+
+
         m_animator.SetBool("Defence", Player.IsDefence);
+        runAnimator.SetBool("OnGround", Player.IsOnGround);
+        runAnimator.SetFloat("RunSpeed", Mathf.Abs(Player.PlayerRigidbody2D.velocity.x));
     }
 
     void OnJump(int jumpTime)
     {
         m_animator.SetTrigger("Jump" + jumpTime);
+        switch (jumpTime)
+        {
+            case 1:
+                AudioController.Instance.CreatEvent("TiaoYue1").start();
+                break;
+            case 2:
+                AudioController.Instance.CreatEvent("TiaoYue1").start();
+                break;
+            default:
+                break;
+        }
+
     }
 
     void OnGround()
@@ -78,7 +113,7 @@ public class AnimationController : PlayerFunctionBase
         m_animator.SetTrigger("JumpEnd");
     }
 
-    void OnAttackStart() { m_animator.SetBool("Attack", true); }
+    void OnAttackStart() { m_animator.SetBool("Attack", true); AudioController.Instance.CreatEvent("ciChangKongFang").start(); }
     void OnAttackStop() { m_animator.SetBool("Attack", false); }
 
 
@@ -91,5 +126,18 @@ public class AnimationController : PlayerFunctionBase
         }
 
         m_animator.SetBool("Vertigo", value);
+    }
+
+
+    FMOD.Studio.EventInstance defenceEvent;
+
+    void OnDefenceStart()
+    {
+
+    }
+
+    void OnDefenceStop()
+    {
+
     }
 }

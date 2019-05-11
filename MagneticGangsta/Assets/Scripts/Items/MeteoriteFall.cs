@@ -58,10 +58,13 @@ public class MeteoriteFall : PlayerFunctionBase
 
     }
 
+
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer == 10 && collider.IsTouching(collision))
         {
+
             OnBoom?.Invoke();
             isBoomed = true;
         }
