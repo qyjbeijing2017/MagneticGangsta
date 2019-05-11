@@ -40,16 +40,18 @@ public class LevelControl : MonoSingleton<LevelControl>
         FindPlayers();
 
         Daemon.Instance.Init();
-        UIManager.Instance.Open("GUIPanel");
-        LevelTime.OnTimeOut += onGameEnd;
+
     }
 
     // Start is called before the first frame update
     void Start()
     {
         LevelTime.OnTimeOut += OnLevelEnd;
+        LevelTime.OnTimeOut += onGameEnd;
         LevelTime.Start();
         LevelScoreBoard.Init();
+
+        UIManager.Instance.Open("GUIPanel");
     }
 
     void OnLevelEnd()
