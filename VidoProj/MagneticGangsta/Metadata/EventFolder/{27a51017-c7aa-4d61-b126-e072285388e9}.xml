@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EventFolder" id="{27a51017-c7aa-4d61-b126-e072285388e9}">
+		<property name="name">
+			<value>daojishi</value>
+		</property>
+		<relationship name="folder">
+			<destination>{77557587-ad88-44d9-9fa0-9b8fbcddbff9}</destination>
+		</relationship>
+	</object>
+</objects>
