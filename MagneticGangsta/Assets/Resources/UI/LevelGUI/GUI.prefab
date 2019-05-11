@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 128478565761686748}
   - component: {fileID: 8328732261975192249}
   m_Layer: 5
-  m_Name: Fire
+  m_Name: GreenFire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1077,7 +1077,7 @@ GameObject:
   - component: {fileID: 8955138924167450128}
   - component: {fileID: 5168518991372160073}
   m_Layer: 5
-  m_Name: Fire (1)
+  m_Name: GreenFireBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1266,6 +1266,14 @@ MonoBehaviour:
   m_blue: {fileID: 2900610577991294152}
   m_yellow: {fileID: 3010154526532866774}
   m_green: {fileID: 2767150298513806025}
+  redFire: {fileID: 4824209922030295119}
+  redFireBG: {fileID: 6588576080770300674}
+  yellowFire: {fileID: 4635464392015115935}
+  yellowFireBG: {fileID: 6511846045372700647}
+  greenFire: {fileID: 264571280892056036}
+  greenFireBG: {fileID: 2754130602319922564}
+  blueFire: {fileID: 7102948486056959326}
+  blueFireBG: {fileID: 4149403589045141296}
 --- !u!1 &4149403589045141296
 GameObject:
   m_ObjectHideFlags: 0
@@ -1280,7 +1288,7 @@ GameObject:
   - component: {fileID: 6176871119669597957}
   - component: {fileID: 5703707683514619814}
   m_Layer: 5
-  m_Name: Fire (1)
+  m_Name: BlueFireBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1423,7 +1431,7 @@ GameObject:
   - component: {fileID: 8548917798947487960}
   - component: {fileID: 155823555928951886}
   m_Layer: 5
-  m_Name: Fire
+  m_Name: YellowFire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1565,7 +1573,7 @@ GameObject:
   - component: {fileID: 7611135432616655215}
   - component: {fileID: 1313407621311585368}
   m_Layer: 5
-  m_Name: Fire
+  m_Name: RedFire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1660,7 +1668,7 @@ GameObject:
   - component: {fileID: 7646356324954149644}
   - component: {fileID: 5645703837630822023}
   m_Layer: 5
-  m_Name: Fire (1)
+  m_Name: YellowFireBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1802,7 +1810,7 @@ GameObject:
   - component: {fileID: 5692706689806766403}
   - component: {fileID: 6476285009718038026}
   m_Layer: 5
-  m_Name: Fire (1)
+  m_Name: RedFireBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1897,7 +1905,7 @@ GameObject:
   - component: {fileID: 1045431100684821755}
   - component: {fileID: 5875285519596155654}
   m_Layer: 5
-  m_Name: Fire
+  m_Name: BlueFire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

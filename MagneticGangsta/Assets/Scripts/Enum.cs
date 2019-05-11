@@ -71,6 +71,7 @@ public struct Polarity
 
 public enum Charactor
 {
+    None = 0,
     Red = 1,
     Yellow = 2,
     Blue = 3,
