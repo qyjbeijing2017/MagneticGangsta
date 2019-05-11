@@ -18,6 +18,8 @@ public class ItemBoom : PlayerFunctionBase
     [SerializeField] float m_shakeTime = 0.5f;
     [SerializeField] Vector3 m_shakeVec = new Vector3(1, 1, 0);
 
+    [SerializeField] SpriteRenderer renderer;
+
     // Start is called before the first frame update
     public override void PlayerInit()
     {
@@ -41,7 +43,9 @@ public class ItemBoom : PlayerFunctionBase
     void OnBoom()
     {
         m_animator.speed = 1;
-        m_spriteRenderer.enabled = false;
+        renderer.enabled = false;
+        transform.up = Vector3.down;
+
     }
 
     public void BoomStart()
