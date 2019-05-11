@@ -1019,20 +1019,33 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2876028019944168179, guid: 358902c9e54228d479a02dd71450bc52,
-        type: 3}
-      propertyPath: MaxMoveSpeed
-      value: 15
+    - target: {fileID: 97653670, guid: 358902c9e54228d479a02dd71450bc52, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2876028019944168179, guid: 358902c9e54228d479a02dd71450bc52,
-        type: 3}
-      propertyPath: PlayerForce
-      value: 12
+    - target: {fileID: 97653670, guid: 358902c9e54228d479a02dd71450bc52, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4560957508259680294, guid: 358902c9e54228d479a02dd71450bc52,
-        type: 3}
-      propertyPath: AttackDamage.AttackForce
-      value: 30
+    - target: {fileID: 97653670, guid: 358902c9e54228d479a02dd71450bc52, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 97653670, guid: 358902c9e54228d479a02dd71450bc52, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 97653670, guid: 358902c9e54228d479a02dd71450bc52, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 97653669, guid: 358902c9e54228d479a02dd71450bc52, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 97653669, guid: 358902c9e54228d479a02dd71450bc52, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 358902c9e54228d479a02dd71450bc52, type: 3}
@@ -1578,20 +1591,40 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5866359385626604066, guid: c6422a0f38ec7c744b558723afacb449,
+    - target: {fileID: 5268250249007577550, guid: c6422a0f38ec7c744b558723afacb449,
         type: 3}
-      propertyPath: MaxMoveSpeed
-      value: 15
+      propertyPath: m_LocalRotation.x
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5866359385626604066, guid: c6422a0f38ec7c744b558723afacb449,
+    - target: {fileID: 5268250249007577550, guid: c6422a0f38ec7c744b558723afacb449,
         type: 3}
-      propertyPath: PlayerForce
-      value: 12
+      propertyPath: m_LocalRotation.y
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6045637132172387231, guid: c6422a0f38ec7c744b558723afacb449,
+    - target: {fileID: 5268250249007577550, guid: c6422a0f38ec7c744b558723afacb449,
         type: 3}
-      propertyPath: AttackDamage.AttackForce
-      value: 30
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5268250249007577550, guid: c6422a0f38ec7c744b558723afacb449,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5268250249007577550, guid: c6422a0f38ec7c744b558723afacb449,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454113604575898618, guid: c6422a0f38ec7c744b558723afacb449,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454113604575898618, guid: c6422a0f38ec7c744b558723afacb449,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6422a0f38ec7c744b558723afacb449, type: 3}
@@ -2194,6 +2227,41 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3897692444305310687, guid: 966548d675839d349a0e10c4667b9ff9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897692444305310687, guid: 966548d675839d349a0e10c4667b9ff9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897692444305310687, guid: 966548d675839d349a0e10c4667b9ff9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897692444305310687, guid: 966548d675839d349a0e10c4667b9ff9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897692444305310687, guid: 966548d675839d349a0e10c4667b9ff9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6727882122233200882, guid: 966548d675839d349a0e10c4667b9ff9,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6727882122233200882, guid: 966548d675839d349a0e10c4667b9ff9,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 966548d675839d349a0e10c4667b9ff9, type: 3}
 --- !u!1 &1166349847
@@ -2485,6 +2553,41 @@ PrefabInstance:
     - target: {fileID: 3207470125103222336, guid: f2b3838996916474585dd8d2c1470fbb,
         type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3237693397255548676, guid: f2b3838996916474585dd8d2c1470fbb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3237693397255548676, guid: f2b3838996916474585dd8d2c1470fbb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3237693397255548676, guid: f2b3838996916474585dd8d2c1470fbb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3237693397255548676, guid: f2b3838996916474585dd8d2c1470fbb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3237693397255548676, guid: f2b3838996916474585dd8d2c1470fbb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122915702074252278, guid: f2b3838996916474585dd8d2c1470fbb,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122915702074252278, guid: f2b3838996916474585dd8d2c1470fbb,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

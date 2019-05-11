@@ -13,6 +13,8 @@ public class AnimationController : PlayerFunctionBase
     [SerializeField] Transform MagneticFieldGUI;
 
 
+    [SerializeField] Animator runAnimator;
+
     private bool m_isVertigo = false;
 
     public override void PlayerInit()
@@ -66,6 +68,8 @@ public class AnimationController : PlayerFunctionBase
             m_animator.SetFloat("MoveSpeed", Mathf.Abs(inputDir));
 
         m_animator.SetBool("Defence", Player.IsDefence);
+        runAnimator.SetBool("OnGround", Player.IsOnGround);
+        runAnimator.SetFloat("RunSpeed", Mathf.Abs(Player.PlayerRigidbody2D.velocity.x));
     }
 
     void OnJump(int jumpTime)
