@@ -247,7 +247,6 @@ GameObject:
   - component: {fileID: 5866359385626604066}
   - component: {fileID: 755083113521595878}
   - component: {fileID: 5718470692501123431}
-  - component: {fileID: 6045637132172387231}
   - component: {fileID: 2129216095696740855}
   - component: {fileID: 2190959250627225289}
   - component: {fileID: 8392989219317036955}
@@ -501,37 +500,6 @@ MonoBehaviour:
   GroundMask:
     serializedVersion: 2
     m_Bits: 1536
---- !u!114 &6045637132172387231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597397445722083930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa7ef4e833df4df479aaf6aca2341dec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  FunctionEnable: 1
-  OptionButton: Attack
-  AttackTime:
-    CDTime: 0.1
-  AttackCD:
-    CDTime: 1
-  ReactionCoefficient: 0.5
-  collider: {fileID: 0}
-  AttackDamage:
-    Attacker: {fileID: 0}
-    AttackForce: 30
-    AttackPolarity:
-      Value: 0
-    Buffes: []
-    AttackPosition: {x: 0, y: 0}
-    AttackSpeed: 0
-    BeHitEffectOn: 1
-  AttackCost: 30
 --- !u!114 &2129216095696740855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -850,8 +818,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1960040565725808109}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.21, y: -1, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3014076278609773571}
@@ -894,7 +862,7 @@ SpriteRenderer:
   m_SortingLayerID: 589645687
   m_SortingLayer: 11
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ab3f3b10d03946a46ac7086466e83484, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -902,7 +870,7 @@ SpriteRenderer:
   m_Size: {x: 5, y: 5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &4736523312556570859

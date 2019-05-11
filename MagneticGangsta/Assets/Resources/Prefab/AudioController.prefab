@@ -50,8 +50,8 @@ MonoBehaviour:
     EventPath: event:/BeijingKaiChang
   - EventName: BeijingXuanGuan
     EventPath: event:/BeijingXuanGuan
-  - EventName: test1
-    EventPath: event:/BeijingXuanGuan
+  - EventName: ciChangKongFang
+    EventPath: event:/youxijiemian/renwu/cichangKongFang
   - EventName: test2
     EventPath: event:/BeijingXuanGuan
   - EventName: FeiChuanFeiGuo

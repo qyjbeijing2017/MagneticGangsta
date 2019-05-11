@@ -28,6 +28,7 @@ public class BeHitBase : PlayerFunctionBase
 
         if (Player.IsDefence)
         {
+            SendMessage("OnAttackBeDefence");
             return;
         }
 

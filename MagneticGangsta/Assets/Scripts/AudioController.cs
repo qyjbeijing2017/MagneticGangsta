@@ -6,7 +6,7 @@ using FMODUnity;
 
 public class AudioController : MonoSingleton<AudioController>
 {
-    [SerializeField]List<AudioPath> Paths;
+    [SerializeField] List<AudioPath> Paths;
 
     Dictionary<string, FMOD.Studio.EventInstance> AudioEvents = new Dictionary<string, FMOD.Studio.EventInstance>();
 
@@ -27,10 +27,30 @@ public class AudioController : MonoSingleton<AudioController>
             AudioEvents.Add(Paths[i].EventName, eventInstance);
         }
     }
-    public  FMOD.Studio.EventInstance GetEvent(string name)
+
+
+
+    public FMOD.Studio.EventInstance GetEvent(string name)
     {
         return AudioEvents[name];
     }
+
+
+
+    public FMOD.Studio.EventInstance CreatEvent(string name)
+    {
+        string path = null;
+        for (int i = 0; i < Paths.Count; i++)
+        {
+            if (Paths[i].EventName == name)
+                path = Paths[i].EventPath;
+        }
+
+        FMOD.Studio.EventInstance eventInstance = FMODUnity.RuntimeManager.CreateInstance(path);
+        return eventInstance;
+    }
+
+
     public void StopAll()
     {
         var enumerator = AudioEvents.GetEnumerator();

@@ -1111,6 +1111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 514530139}
   - component: {fileID: 514530138}
+  - component: {fileID: 514530140}
   m_Layer: 0
   m_Name: LevelControl
   m_TagString: Untagged
@@ -1147,6 +1148,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &514530140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514530137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e8c6440ee78f974cb55bc99e0578e34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioEvnetName: BeiJing1Guan
 --- !u!1 &526924157
 GameObject:
   m_ObjectHideFlags: 0
@@ -1264,40 +1278,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 97653670, guid: 358902c9e54228d479a02dd71450bc52, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 97653670, guid: 358902c9e54228d479a02dd71450bc52, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 97653670, guid: 358902c9e54228d479a02dd71450bc52, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 97653670, guid: 358902c9e54228d479a02dd71450bc52, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 97653670, guid: 358902c9e54228d479a02dd71450bc52, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 97653669, guid: 358902c9e54228d479a02dd71450bc52, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 97653669, guid: 358902c9e54228d479a02dd71450bc52, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2224139593265948317, guid: 358902c9e54228d479a02dd71450bc52,
-        type: 3}
-      propertyPath: m_rebornEffect
-      value: 
-      objectReference: {fileID: 7541289374466220846, guid: 2eee668ed1730f94fbcec27f348f9753,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 358902c9e54228d479a02dd71450bc52, type: 3}
 --- !u!1001 &563275313
@@ -1867,41 +1847,6 @@ PrefabInstance:
     - target: {fileID: 5419926845624711829, guid: c6422a0f38ec7c744b558723afacb449,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5268250249007577550, guid: c6422a0f38ec7c744b558723afacb449,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5268250249007577550, guid: c6422a0f38ec7c744b558723afacb449,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5268250249007577550, guid: c6422a0f38ec7c744b558723afacb449,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5268250249007577550, guid: c6422a0f38ec7c744b558723afacb449,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5268250249007577550, guid: c6422a0f38ec7c744b558723afacb449,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7454113604575898618, guid: c6422a0f38ec7c744b558723afacb449,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7454113604575898618, guid: c6422a0f38ec7c744b558723afacb449,
-        type: 3}
-      propertyPath: m_WasSpriteAssigned
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

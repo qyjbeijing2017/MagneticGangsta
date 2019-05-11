@@ -9,14 +9,29 @@ public class DefenceBase : PlayerFunctionBase
     public float DefenceCost = 20.0f;
     public override void PlayerLoop()
     {
-        if (Input.GetButtonDown("Defence" + Player.ID)) Player.IsDefence = true;
+        if (Input.GetButtonDown("Defence" + Player.ID))
+        {
+            Player.IsDefence = true;
+            SendMessage("OnDefenceStart");
+        }
         if (Player.FunctionBases.ContainsKey("Power"))
         {
             Power power = Player.FunctionBases["Power"] as Power;
             if (Player.IsDefence)
-                if (!power.PowerCost(DefenceCost * Time.deltaTime)) Player.IsDefence = false;
+            {
+                if (!power.PowerCost(DefenceCost * Time.deltaTime))
+                {
+                    Player.IsDefence = false;
+                    SendMessage("OnDefenceStop");
+                }
+            }
+
         }
-        if (Input.GetButtonUp("Defence" + Player.ID)) Player.IsDefence = false;
+        if (Input.GetButtonUp("Defence" + Player.ID))
+        {
+            Player.IsDefence = false;
+            SendMessage("OnDefenceStop");
+        }
     }
 
 
