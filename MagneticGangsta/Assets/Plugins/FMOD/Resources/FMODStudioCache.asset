@@ -19,12 +19,32 @@ MonoBehaviour:
   - {fileID: 114705072920640270}
   - {fileID: 114330790309273246}
   - {fileID: 114501106949367402}
+  - {fileID: 114532802335307064}
+  - {fileID: 114217259700371474}
+  - {fileID: 114338401853401234}
+  - {fileID: 114421085249427236}
+  - {fileID: 114509103736988692}
+  - {fileID: 114835704919084926}
+  - {fileID: 114500949868924052}
+  - {fileID: 114509251560992926}
+  - {fileID: 114237440643931504}
+  - {fileID: 114595105693490050}
+  - {fileID: 114893533343315186}
+  - {fileID: 114831480378361334}
+  - {fileID: 114066678517049410}
+  - {fileID: 114713633204538266}
+  - {fileID: 114975883475150938}
+  - {fileID: 114728342806649804}
+  - {fileID: 114889139459785560}
+  - {fileID: 114964055086905410}
+  - {fileID: 114018716898295020}
+  - {fileID: 114485127691211852}
   EditorParameters: []
   MasterBanks:
   - {fileID: 114011741251926076}
   StringsBanks:
   - {fileID: 114976740226309520}
-  stringsBankWriteTime: 636929373085051785
+  stringsBankWriteTime: 636931977084566243
   cacheVersion: 3
 --- !u!114 &114011741251926076
 MonoBehaviour:
@@ -39,12 +59,104 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\MagneticGangsta\VidoProj\MagneticGangsta\Build\Desktop\Master.bank
-  lastModified: 636929373085031446
+  lastModified: 636931977084536024
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 9336576
+    Value: 12268384
   Exists: 1
+--- !u!114 &114018716898295020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/youxijiemian/fengbao
+  guid: f8a139237ce61148bc37ad3fc88a57ea
+  Banks:
+  - {fileID: 114011741251926076}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 94050
+--- !u!114 &114066678517049410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/youxijiemian/renwu/siwangbaozha2
+  guid: cb7792d28b50a3438a0df6b7dc4c2d5c
+  Banks:
+  - {fileID: 114011741251926076}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2742
+--- !u!114 &114217259700371474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/changjingkaishi/feichuanfeiguo
+  guid: 1a7511132045f14d8133f26ea976c538
+  Banks:
+  - {fileID: 114011741251926076}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2168
+--- !u!114 &114237440643931504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/youxijiemian/daojishi/youxijieshu
+  guid: a200db3372d9e84da4f801552f51e213
+  Banks:
+  - {fileID: 114011741251926076}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6200
 --- !u!114 &114330790309273246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68,6 +180,98 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 271098
+--- !u!114 &114338401853401234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/youxijiemian/renwu/tiaoyue1
+  guid: 2aef21696b35fe45a1a8ea3d635531d6
+  Banks:
+  - {fileID: 114011741251926076}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 39
+--- !u!114 &114421085249427236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/youxijiemian/renwu/cichang daren
+  guid: 31de6ff5305d0a45b80f11a4784629db
+  Banks:
+  - {fileID: 114011741251926076}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1926
+--- !u!114 &114485127691211852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/youxijiemian/renwu/fuhuo1
+  guid: fa0064d006e4b84197b97cc7b5af7a14
+  Banks:
+  - {fileID: 114011741251926076}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2600
+--- !u!114 &114500949868924052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/youxijiemian/shengli
+  guid: 8ebdb0661e7d424cb892f5a50a8cb083
+  Banks:
+  - {fileID: 114011741251926076}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5276
 --- !u!114 &114501106949367402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,6 +295,98 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 170926
+--- !u!114 &114509103736988692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/youxijiemian/renwu/fangyu
+  guid: 45e1227135d58c42b6acc0a49b130ae5
+  Banks:
+  - {fileID: 114011741251926076}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 11295
+--- !u!114 &114509251560992926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/youxijiemian/renwu/cichang fangyu
+  guid: 9f7c533a88ce134fa7f67ab2268e588e
+  Banks:
+  - {fileID: 114011741251926076}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1400
+--- !u!114 &114532802335307064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/kaishijiemian/anniu1
+  guid: 1338c70040ebbb45b9b5713ceb675dde
+  Banks:
+  - {fileID: 114011741251926076}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 258
+--- !u!114 &114595105693490050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/youxijiemian/daojishi/daojishi1
+  guid: a905b36a9441c94d90ca09da2032a673
+  Banks:
+  - {fileID: 114011741251926076}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 31500
 --- !u!114 &114705072920640270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,6 +410,190 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 220421
+--- !u!114 &114713633204538266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/changjingkaishi/jingbaodeng
+  guid: cc7bbcf418067844ad503c0868470c12
+  Banks:
+  - {fileID: 114011741251926076}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2565
+--- !u!114 &114728342806649804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/youxijiemian/yunshi/yunshi baozha
+  guid: d47ecd16b6ddd0428f7e570bc3ee2b6b
+  Banks:
+  - {fileID: 114011741251926076}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2050
+--- !u!114 &114831480378361334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/changjingkaishi/kaimen1
+  guid: b48734cf7e179945807f430dc509f090
+  Banks:
+  - {fileID: 114011741251926076}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3000
+--- !u!114 &114835704919084926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/youxijiemian/yunshi/yunshi zhuiluo
+  guid: 82e78eb09d6a234cbbb6a82c023831ad
+  Banks:
+  - {fileID: 114011741251926076}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2410
+--- !u!114 &114889139459785560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/youxijiemian/renwu/liangji+-
+  guid: e28d9176a727ab4ea88bcc7084bd0810
+  Banks:
+  - {fileID: 114011741251926076}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 500
+--- !u!114 &114893533343315186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/youxijiemian/renwu/yunxuan1
+  guid: b45b65073b5f4544a0df8ba32ff1233b
+  Banks:
+  - {fileID: 114011741251926076}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 12510
+--- !u!114 &114964055086905410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/youxijiemian/renwu/paobu1
+  guid: e8705b70ca31194989ec7b583f288bb8
+  Banks:
+  - {fileID: 114011741251926076}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5893
+--- !u!114 &114975883475150938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/youxijiemian/renwu/siwang1
+  guid: cfa82b06d3f1c749ab89dd08baf1298b
+  Banks:
+  - {fileID: 114011741251926076}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3501
 --- !u!114 &114976740226309520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,9 +607,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\MagneticGangsta\VidoProj\MagneticGangsta\Build\Desktop\Master.strings.bank
-  lastModified: 636929373085051785
+  lastModified: 636931977084566243
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 820
+    Value: 1780
   Exists: 1
