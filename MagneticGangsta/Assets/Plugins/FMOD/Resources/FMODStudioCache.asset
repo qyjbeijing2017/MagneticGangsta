@@ -40,12 +40,13 @@ MonoBehaviour:
   - {fileID: 114018716898295020}
   - {fileID: 114485127691211852}
   - {fileID: 114743842420715618}
+  - {fileID: 114036123974370338}
   EditorParameters: []
   MasterBanks:
   - {fileID: 114011741251926076}
   StringsBanks:
   - {fileID: 114976740226309520}
-  stringsBankWriteTime: 636932023371542596
+  stringsBankWriteTime: 636932653495610301
   cacheVersion: 3
 --- !u!114 &114011741251926076
 MonoBehaviour:
@@ -60,11 +61,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\MagneticGangsta\VidoProj\MagneticGangsta\Build\Desktop\Master.bank
-  lastModified: 636932023371502699
+  lastModified: 636932653495410008
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 12272064
+    Value: 12251232
   Exists: 1
 --- !u!114 &114018716898295020
 MonoBehaviour:
@@ -89,6 +90,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 94050
+--- !u!114 &114036123974370338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Beijing2Guan
+  guid: 3c6f9761d0b1c84f9517605a8d9b4ee4
+  Banks:
+  - {fileID: 114011741251926076}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &114066678517049410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,7 +158,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 2168
+  Length: 0
 --- !u!114 &114237440643931504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,7 +250,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1926
+  Length: 360
 --- !u!114 &114485127691211852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,7 +273,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 2600
+  Length: 1800
 --- !u!114 &114500949868924052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,7 +342,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 11295
+  Length: 2500
 --- !u!114 &114509251560992926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,7 +365,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1400
+  Length: 440
 --- !u!114 &114532802335307064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -640,7 +664,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 3501
+  Length: 1600
 --- !u!114 &114976740226309520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -654,9 +678,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\MagneticGangsta\VidoProj\MagneticGangsta\Build\Desktop\Master.strings.bank
-  lastModified: 636932023371542596
+  lastModified: 636932653495610301
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1830
+    Value: 1866
   Exists: 1

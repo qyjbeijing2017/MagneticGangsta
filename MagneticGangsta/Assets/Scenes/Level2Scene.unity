@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -451,6 +451,7 @@ GameObject:
   - component: {fileID: 514530139}
   - component: {fileID: 514530138}
   - component: {fileID: 514530140}
+  - component: {fileID: 514530141}
   m_Layer: 0
   m_Name: LevelControl
   m_TagString: Untagged
@@ -499,6 +500,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d427480bf122094dbda36775d073dec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &514530141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514530137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e8c6440ee78f974cb55bc99e0578e34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioEvnetName: BeiJing2Guan
 --- !u!1 &526924157
 GameObject:
   m_ObjectHideFlags: 0

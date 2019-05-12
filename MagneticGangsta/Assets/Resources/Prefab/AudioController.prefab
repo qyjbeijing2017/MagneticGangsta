@@ -58,8 +58,8 @@ MonoBehaviour:
     EventPath: event:/changjingkaishi/feichuanfeiguo
   - EventName: FengBao
     EventPath: event:/youxijiemian/fengbao
-  - EventName: test4
-    EventPath: event:/changjingkaishi/kaimen1
+  - EventName: BeiJing2Guan
+    EventPath: event:/Beijing2Guan
   - EventName: AnNiu1
     EventPath: event:/kaishijiemian/anniu1
   - EventName: DaoJiShi1
