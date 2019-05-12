@@ -10,14 +10,13 @@ public class LevelMusicControl : MonoBehaviour
     void Start()
     {
         AudioController.Instance.StopAll();
-        if (AudioEvnetName != "BeiJing1Guan")
-            AudioController.Instance.GetEvent(AudioEvnetName).start();
+        AudioController.Instance.GetEvent(AudioEvnetName).start();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     public void SoundStop()
