@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 5774946236379394589}
   - component: {fileID: 6956465481213802120}
   - component: {fileID: 7541289374466220846}
+  - component: {fileID: 5398127430103944545}
   m_Layer: 0
   m_Name: RebornEffectBlue
   m_TagString: Untagged
@@ -141,5 +142,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56f3aa9e543a6ad4890f92bea7e56171, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5398127430103944545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541289374466220845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc23dd3e73db9fb41b544ba6f04526ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

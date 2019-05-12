@@ -12,6 +12,8 @@ public class DamageBase : System.Object
     [HideInInspector] public Vector2 AttackPosition = Vector2.zero;
     public float AttackSpeed;
     public bool BeHitEffectOn = true;
+    public bool SoundPlay = true;
+
 
     public virtual DamageBase Copy()
     {
@@ -23,6 +25,7 @@ public class DamageBase : System.Object
         copy.Attacker = Attacker;
         copy.AttackSpeed = AttackSpeed;
         copy.BeHitEffectOn = BeHitEffectOn;
+        copy.SoundPlay = SoundPlay;
         return copy;
     }
 }

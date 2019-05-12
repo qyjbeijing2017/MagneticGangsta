@@ -15,12 +15,23 @@ public class LevelTimer : MonoBehaviour
     [SerializeField] private Color m_textEndColor;
     [SerializeField] private Color m_imageEndColor;
 
+    private void Start()
+    {
 
+        LevelTime.OnTimeOut += OnGameEnd;
+        GameEndTimerEvent = AudioController.Instance.CreatEvent("DaoJiShi1");
+    }
+    FMOD.Studio.EventInstance GameEndTimerEvent;
+    private void OnGameEnd()
+    {
+        GameEndTimerEvent.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+    }
     private void Update()
     {
         ImageShow();
         TextShow();
         ChangeColor();
+        Un10Second();
     }
 
 
@@ -37,6 +48,19 @@ public class LevelTimer : MonoBehaviour
             m_progress.color = m_imageStartColor;
         }
     }
+
+    bool isSoundPlay = false;
+
+    void Un10Second()
+    {
+        if ((1 - LevelTime.CD) * LevelTime.CDTime <= 10 && !isSoundPlay)
+        {
+            GameEndTimerEvent.start();
+            FindObjectOfType<LevelMusicControl>().SoundStop();
+            isSoundPlay = true;
+        }
+    }
+
     void ImageShow()
     {
         m_progress.fillAmount = 1 - LevelTime.CD;

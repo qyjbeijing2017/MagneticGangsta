@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7585161108659996329}
   - component: {fileID: 7585161108659996328}
   - component: {fileID: 5501157790109410840}
+  - component: {fileID: 5644377550012419955}
   m_Layer: 0
   m_Name: RedDie
   m_TagString: Untagged
@@ -110,5 +111,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 154f5cc19f3e4f94dbeb2ec66351618d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5644377550012419955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7585161108659996335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc23dd3e73db9fb41b544ba6f04526ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -18,4 +18,14 @@ public class LevelMusicControl : MonoBehaviour
     {
         
     }
+
+    public void SoundStop()
+    {
+        AudioController.Instance.GetEvent(AudioEvnetName).stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+    }
+
+    public void SoundStart()
+    {
+        AudioController.Instance.GetEvent(AudioEvnetName).start();
+    }
 }

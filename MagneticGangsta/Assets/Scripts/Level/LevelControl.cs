@@ -55,8 +55,9 @@ public class LevelControl : MonoSingleton<LevelControl>
     }
 
     void OnLevelEnd()
-    {
-
+    {      
+        AudioController.Instance.CreatEvent("YouXiJieShu").start();
+        AudioController.Instance.CreatEvent("ShengLi").start();
     }
 
     // Update is called once per frame

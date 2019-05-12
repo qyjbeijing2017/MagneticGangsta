@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Paths:
-  - EventName: Beijing1Guan
+  - EventName: BeiJing1Guan
     EventPath: event:/Beijing1Guan
   - EventName: BeijingKaiChang
     EventPath: event:/BeijingKaiChang
@@ -52,12 +52,12 @@ MonoBehaviour:
     EventPath: event:/BeijingXuanGuan
   - EventName: ciChangKongFang
     EventPath: event:/youxijiemian/renwu/cichangKongFang
-  - EventName: test2
-    EventPath: event:/BeijingXuanGuan
+  - EventName: FangYu
+    EventPath: event:/youxijiemian/renwu/fangyu
   - EventName: FeiChuanFeiGuo
     EventPath: event:/changjingkaishi/feichuanfeiguo
-  - EventName: test3
-    EventPath: event:/changjingkaishi/jingbaodeng
+  - EventName: FengBao
+    EventPath: event:/youxijiemian/fengbao
   - EventName: test4
     EventPath: event:/changjingkaishi/kaimen1
   - EventName: AnNiu1

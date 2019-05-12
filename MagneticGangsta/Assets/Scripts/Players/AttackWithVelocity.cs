@@ -25,6 +25,7 @@ public class AttackWithVelocity : AttackWithCost
         attack = true;
         AttackTime.Start();
         AttackCD.Start();
+        SendMessage("OnAttackNow");
     }
 
     bool attack = false;

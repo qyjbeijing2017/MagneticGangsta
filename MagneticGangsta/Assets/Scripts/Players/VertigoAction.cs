@@ -89,6 +89,7 @@ public class VertigoAction : PlayerFunctionBase
                 Player.BuffManager.AddBuff(vertigo);
                 vertigo.MaxTime.OnTimeOut += OnVertigoEnd;
                 VertigoAct?.Invoke(true);
+                SendMessage("OnVertigoStart");
             }
         }
 
@@ -99,6 +100,8 @@ public class VertigoAction : PlayerFunctionBase
     protected void OnVertigoEnd()
     {
         VertigoAct?.Invoke(false);
+        if (gameObject.activeSelf)
+            SendMessage("OnVertigoSoundEnd");
     }
 
 }

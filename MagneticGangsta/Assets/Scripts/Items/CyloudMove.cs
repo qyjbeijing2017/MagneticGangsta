@@ -14,11 +14,14 @@ public class CyloudMove : PlayerFunctionBase
 
     public UnityAction OnDestory;
 
+    FMOD.Studio.EventInstance cyloudEvent;
 
     void Start()
     {
         transform.position = TargetPosition.StartPositon;
         m_nowPosition = TargetPosition.StartPositon;
+        cyloudEvent = AudioController.Instance.CreatEvent("FengBao");
+        cyloudEvent.start();
     }
 
     // Update is called once per frame
@@ -28,7 +31,9 @@ public class CyloudMove : PlayerFunctionBase
         if (TargetPosition.Start2End.magnitude <= (m_nowPosition- TargetPosition.StartPositon).magnitude )
         {
             OnDestory?.Invoke();
+            cyloudEvent.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
             Destroy(gameObject);
+
         }
         else
         {

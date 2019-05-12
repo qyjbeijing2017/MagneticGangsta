@@ -11,10 +11,10 @@ public class PlayerMoveByKeyBoard : PlayerFunctionBase
 
     public KeyCode left = KeyCode.A;
     public KeyCode right = KeyCode.D;
-
+    FMOD.Studio.EventInstance runEvent;
     public override void PlayerInit()
     {
-        
+        runEvent = AudioController.Instance.CreatEvent("PaoBu1");
     }
     public override void PlayerLoop()
     {
@@ -30,6 +30,7 @@ public class PlayerMoveByKeyBoard : PlayerFunctionBase
         }
     }
 
+    bool isRunSoundPlay = false;
     public void Moving()
     {
         Move move = Player.FunctionBases["Move"] as Move;
@@ -54,6 +55,21 @@ public class PlayerMoveByKeyBoard : PlayerFunctionBase
         GetComponent<Animator>().SetFloat("MoveSpeed", Mathf.Abs(force));
         if (force < -0.3) Player.transform.localScale = new Vector3(-1, 1, 1);
         if (force > 0.3) Player.transform.localScale = new Vector3(1, 1, 1);
+
+
+        if (Mathf.Abs(force) >= 0.3 && !isRunSoundPlay && Player.IsOnGround)
+        {
+            runEvent.start();
+            isRunSoundPlay = true;
+        }
+
+
+        if ((Mathf.Abs(force) < 0.3 || !Player.IsOnGround) && isRunSoundPlay)
+        {
+            runEvent.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            isRunSoundPlay = false;
+        }
+
 
 
         if (Player.PlayerRigidbody2D.velocity.x > MaxMoveSpeed)

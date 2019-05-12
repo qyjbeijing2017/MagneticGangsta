@@ -44,18 +44,22 @@ public class AnimationController : PlayerFunctionBase
         }
 
         runEvent = AudioController.Instance.CreatEvent("PaoBu1");
-        defenceEvent = AudioController.Instance.CreatEvent("PaoBu1");
+        defenceEvent = AudioController.Instance.CreatEvent("FangYu");
+        changePolarityEvent = AudioController.Instance.CreatEvent("LiangJiJiaJian");
+        VertigoEvent = AudioController.Instance.CreatEvent("YunXuan1");
     }
 
     private void OnBeHit(DamageBase damage)
     {
         m_animator.SetTrigger("blood");
+        if (damage.SoundPlay)
+            AudioController.Instance.CreatEvent("CiChangDaRen").start();
     }
 
 
     void OnAttackBeDefence()
     {
-        AudioController.Instance.CreatEvent("ciChangFangYu").start();
+        AudioController.Instance.CreatEvent("CiChangFangYu").start();
     }
 
     // Update is called once per frame
@@ -75,14 +79,25 @@ public class AnimationController : PlayerFunctionBase
         }
 
         if (Mathf.Abs(inputDir) >= 0.3)
-        {
             m_animator.SetFloat("MoveSpeed", Mathf.Abs(inputDir));
 
-            runEvent.start();
+        if (!Player.IsMoving)
+        {
+            m_animator.SetFloat("MoveSpeed", 0);
         }
-        else
+
+
+        if (Mathf.Abs(inputDir) >= 0.3 && !isRunSoundPlay && Player.IsOnGround)
+        {
+            runEvent.start();
+            isRunSoundPlay = true;
+        }
+
+
+        if ((Mathf.Abs(inputDir) < 0.3  || !Player.IsOnGround) && isRunSoundPlay)
         {
             runEvent.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            isRunSoundPlay = false;
         }
 
 
@@ -90,6 +105,8 @@ public class AnimationController : PlayerFunctionBase
         runAnimator.SetBool("OnGround", Player.IsOnGround);
         runAnimator.SetFloat("RunSpeed", Mathf.Abs(Player.PlayerRigidbody2D.velocity.x));
     }
+
+    bool isRunSoundPlay = false;
 
     void OnJump(int jumpTime)
     {
@@ -133,11 +150,33 @@ public class AnimationController : PlayerFunctionBase
 
     void OnDefenceStart()
     {
-
+        defenceEvent.start();
     }
 
     void OnDefenceStop()
     {
-
+        defenceEvent.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
     }
+
+    FMOD.Studio.EventInstance changePolarityEvent;
+    void OnChangePolarity()
+    {
+        changePolarityEvent.start();
+    }
+    FMOD.Studio.EventInstance VertigoEvent;
+    void OnVertigoStart()
+    {
+        VertigoEvent.start();
+    }
+    void OnVertigoSoundEnd()
+    {
+        VertigoEvent.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+    }
+
+    void OnAttackNow()
+    {
+        //AudioController.Instance.CreatEvent("ciChangKongFang").start();
+    }
+
+
 }

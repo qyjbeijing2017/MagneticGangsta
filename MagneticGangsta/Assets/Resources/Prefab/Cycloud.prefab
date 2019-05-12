@@ -202,6 +202,7 @@ MonoBehaviour:
     AttackPosition: {x: 0, y: 0}
     AttackSpeed: 10
     BeHitEffectOn: 0
+    SoundPlay: 0
   collider: {fileID: 115022342418595596}
   centerForce: 0.342
   AttackInterval:

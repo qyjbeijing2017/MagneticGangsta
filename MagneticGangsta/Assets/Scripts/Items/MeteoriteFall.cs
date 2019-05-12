@@ -64,8 +64,9 @@ public class MeteoriteFall : PlayerFunctionBase
     {
         if (collision.gameObject.layer == 10 && collider.IsTouching(collision))
         {
-
+            
             OnBoom?.Invoke();
+            SendMessage("OnFallDown");
             isBoomed = true;
         }
     }

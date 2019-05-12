@@ -10,6 +10,7 @@ public class ChangePolarity : PlayerFunctionBase
         if (Input.GetButtonDown("ChangePolarity" + Player.ID))
         {
             Player.PlayerPolarity = !Player.PlayerPolarity;
+            SendMessage("OnChangePolarity");
         }
     }
 
